@@ -1,0 +1,299 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  color:black;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #000;
+  background-color: #428bca;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.curTemBtn {
+  line-height: 45px;
+  margin-top:50px;
+  padding: 0px;
+  height:45px;
+  width:100%;
+  background-color: aquamarine;
+  margin-bottom:0px;
+  color:black;
+  text-align:center;
+  font-size:20px;
+}
+
+.saveTemBtn {
+
+  line-height: 45px;
+  padding: 0px;
+  height:45px;
+  width:100%;
+  background-color: black;
+  margin-bottom:0px;
+  color:white;
+  font-size:20px;
+
+
+}
+
+.firstbox{
+  margin-top:50px;
+  padding:0px;
+  background-color: white;
+  text-align: center;
+  width:30px;
+  
+  
+} 
+
+.sixthbox{
+  margin-left:0px;
+  margin-top:50px;
+  padding:0px;
+  background-color: white;
+  text-align: center;
+  width:30px;
+  
+  
+}
+
+.inputcolor{
+  background-color:grey;
+}
+
+
+.firstcolumn, .sixthcolumn{
+  
+  padding: 0px;
+  height:150px;
+  width:30px;
+  background-color: black;
+  margin-bottom:50px;
+  color:white;
+}
+
+.secondbox, .thirdbox, .fourthbox, .fifthbox{
+  padding:0px;
+  background-color: white;
+  text-align: center;
+  margin-left:10px;
+  
+}
+
+.secondcolumn, .thirdcolumn, .fourthcolumn, .fifthcolumn {
+  
+  padding: 0px;
+  height:30px;
+  width:150px;
+  background-color: black;
+  margin-bottom:90px;
+  color:white;
+}
+
+.boxtemp1, .boxtemp2, .boxtemp3{
+
+  width:150px;
+  height:150px;
+  margin-bottom:100px;
+  background-color: #FFDB58;
+  border-color:red;
+  border-width:5px;
+}
+
+ .boxtemp4 {
+
+  width:150px;
+  height:150px;
+  margin-bottom:100px;
+  background-color: #FFDB58;
+  border-color:red;
+  border-width:5px;
+}
+
+.input-group-addon{
+  background-color: black;
+  border:black;
+}
+  
+
+.floor{
+  display:block;
+  background-color: #ddffff;
+}
+
+.well{
+  padding:110px;
+  background-color: white;
+  
+} 
+
+
+
+
+
+.template1a, .template3a, .template5a, .template7a  {
+    position: absolute;
+    top: 120px;
+    left: 5px;
+    font-size: 40px;
+    color:black;
+    
+}
+
+.template1b, .template3b, .template5b, .template7b {
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    font-size: 40px;
+    color:black;
+    
+}
+
+.template1c, .template3c, .template5c, .template7c {
+    position: absolute;
+    top: 215px;
+    left: 5px;
+    font-size: 40px;
+    color:black;
+    
+}
+
+.template1d, .template3d, .template5d, .template7d {
+    position: absolute;
+    top: 215px;
+    left: 120px;
+    font-size: 40px;
+    color:black;
+    
+}
+.template2a, .template4a, .template6a, .template8a  {
+    position: absolute;
+    top: 370px;
+    left: 5px;
+    font-size: 40px;
+    color:black;
+    
+}
+
+.template2b, .template4b, .template6b, .template8b{
+    position: absolute;
+    top: 370px;
+    left: 120px;
+    font-size: 40px;
+    color:black;
+    
+}
+
+.template2c, .template4c, .template6c, .template8c {
+    position: absolute;
+    top: 465px;
+    left: 5px;
+    font-size: 40px;
+    color:black;
+    
+}
+
+.template2d, .template4d, .template6d, .template8d{
+    position: absolute;
+    top: 465px;
+    left: 120px;
+    font-size: 40px;
+    color:black;
+    
+}
