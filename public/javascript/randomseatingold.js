@@ -23,9 +23,9 @@ var sdNames = [$(".sn01"), $(".sn02"), $(".sn03"), $(".sn04"), $(".sn05"), $(".s
 
 
 
-// for (var d=0; d<sdA.length && d<sdNumber.length; d++) {
-// 	 $(sdA[d]).html(sdNumber[d]);
-// }
+for (var d=0; d<sdA.length && d<sdNumber.length; d++) {
+	 $(sdA[d]).html(sdNumber[d]));
+}
 	
 $('.raninv').css('opacity', '0');
 $('#cktd2a').css('opacity', '0');
@@ -235,8 +235,8 @@ if(temp1){
 	} else {
 		studentNameString = tempR[0][d]
 	}
-		$(sdA[d]).prepend('<br/><div class="studentName">' + studentNameString + 
-			'</div><br/>');
+		$(sdNames[d]).prepend('<br/><div class="studentName">' + studentNameString + 
+			'</div><br/>'));
 	 
 	}
 
@@ -250,7 +250,7 @@ if(temp1){
 
 	
 
-$("#random").on('click', function() {
+$(".randomBtn").on('click', function() {
 
 		var clicked = [];
 		var ckVal = [];
@@ -259,7 +259,7 @@ $("#random").on('click', function() {
 		// console.log(clicked)
 		// console.log(ckVal)
 
-	$('.great:checked').each(function(){  
+	$('.seatbtn:checked').each(function(){  
 
           var values = $(this).val();
           ckVal.push(values);
@@ -292,21 +292,21 @@ $("#random").on('click', function() {
    console.log(ranRoster)
 
 
-	for (var c=0; c<ranRoster.length && sdA.length; c++){
+	for (var c=0; c<ranRoster.length && sdNames.length; c++){
 			var studentNameString2;
 			if(ranRoster[c] == null) {
 		studentNameString2 = "&nbsp"
 		} else {
 		studentNameString2 = ranRoster[c];
 		}
-		$(sdA[c]).find('.studentName').html(studentNameString2);
+		$(sdNames[c]).find('.studentName').html(studentNameString2));
 
 
 }//for desks loop
 			}); //close random button function
 
 
-	$('#saveRandom').on('click', function(){
+	$('.rsSaveBtn').on('click', function(){
 
 		
 		console.log(clonedRoster);

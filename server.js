@@ -71,6 +71,11 @@ app.get("/randomparticipation", function(req, res)
     res.sendFile("randomparticipation.html", {"root":"public"});
 });
 
+app.get("/randomseatingtest", function(req, res)
+{
+    res.sendFile("randomseatingtest.html", {"root":"public"});
+});
+
 
 app.get('/roster', function(req, res) {
   // Query: In our database, go to the animals collection, then "find" everything 

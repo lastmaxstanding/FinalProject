@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Random Seating</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/randomseating.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Class App</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li><div id="sdSelect" class="csSelectBtn btn"><p>Current Seating</p></div></li>
+            <li>
+              <!-- <div class="sdRadio">
+                <input type="radio" class="sdTem" name="sdesk" aria-label="..." value="a01" checked="checked">
+                <input type="radio" class="sdTem" name="sdesk" aria-label="..." value="b01">
+                <input type="radio" class="sdTem" name="sdesk" aria-label="..." value="c01">
+                <input type="radio" class="sdTem" name="sdesk" aria-label="..." value="d01">
+                <input type="radio" class="sdTem" name="sdesk" aria-label="..." value="e01">
+                <input type="radio" class="sdTem" name="sdesk" aria-label="..." value="f01">
+                <input type="radio" class="sdTem" name="sdesk" aria-label="..." value="g01">
+                <input type="radio" class="sdTem" name="sdesk" aria-label="..." value="h01"></div></li> -->
+            <li><div id="tdSelect" class="tdSelectBtn btn"><p>Teacher Desk Select</p></div></li>
+            <li><div class="tdRadio">
+                  <input type="radio" class="tdTem" name="tdesk" aria-label="..." value="td1">
+                  <input type="radio" class="tdTem" name="tdesk" aria-label="..." value="td2">
+                  <input type="radio" class="tdTem" name="tdesk" aria-label="..." value="td3">
+                  <input type="radio" class="tdTem" name="tdesk" aria-label="..." value="td4">
+                  <input type="radio" class="tdTem" name="tdesk" aria-label="..." value="td5">
+                  <input type="radio" class="tdTem" name="tdesk" aria-label="..." value="td6">
+                  <input type="radio" class="tdTem" name="tdesk" aria-label="..." value="td7">
+                  <input type="radio" class="tdTem" name="tdesk" aria-label="..." value="td8">
+                  <input type="radio" class="tdTem" name="tdesk" aria-label="..." value="td9">
+                  <input type="radio" class="tdTem" name="tdesk" aria-label="..." value="td10">
+                  <input type="radio" class="tdTem" name="tdesk" aria-label="..." value="td11">
+                  <input type="radio" class="tdTem" name="tdesk" aria-label="..." value="td12">
+                </div>
+            </li>
+           <li><div id="ranSeat" class="ranSeatBtn btn"><p>Random Seating</p></div></li>
+            <li><div id="asSeat" class="asSeatBtn btn"><p>Ascending Seating</p></div></li>
+            <li><div id="dsSeat" class="dsSeatBtn btn"><p>Descending Seating</p></div></li>
+            <li><div id="ranGroup" class="ranGroupBtn btn"><p>Random Groups</p></div></li>
+            <li><div id="ranPar" class="ranParBtn btn"><p>Random Participation</p></div></li>
+
+          </ul>
+         
+        </div>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Random Seats</h1>
+
+             <div class="col-sm-3 firstbox">
+      
+      <div id="cktd12" class="firstcolumn tdcolor">
+        <p>TD 12</p>
+        
+      </div>
+      <div id="cktd11" class="firstcolumn tdcolor">
+        <p>TD 11</p>
+      </div>
+      <div id="cktd10" class="firstcolumn tdcolor">
+        <p>TD 10</p>
+      </div>
+    </div>
+ 
+
+            
+
+        
+          <div class="row placeholders">
+            <div class="col-sm-1 secondbox"> <!-- beginning of 2nd block -->
+            <div id="ran" class="randomBtn btn">
+                  <p>random</p>
+                      
+            </div>
+            <div id="cktd1" class="tdin tdcolor">
+                  <p>TD 1</p>
+                    
+            </div>
+
+            <div id="sd01" class="boxtemp1 sds sn01 studentName">
+
+                  <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="0">
+            
+                                 
+                
+            </div>
+                  <div id="sd01a" class="boxtemp1a sds A01 C06 B01 D26 E25 G30 F05 H30 deskName"></div>
+
+
+            <div id="sd07" class="boxtemp1 sds sn07 studentName">
+
+                <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="6">
+                
+                                 
+                
+            </div>
+                  <div id="sd07a" class="boxtemp1a sds A07 C12 B02 D27 E19 G24 F04 H29 deskName"></div>
+
+              <div id="sd13" class="boxtemp1 sds sn13 studentName">
+                
+                    <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="12">
+                                 
+                                 
+                
+              </div>
+                  <div id="sd13a" class="boxtemp1a sds A13 C18 B03 D28 E13 G18 F03 H28 deskName"></div>
+
+                     
+
+              <div id="sd19" class="boxtemp1 sds sn19 studentName">
+
+                    <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="18">
+                
+                
+                                 
+                                 
+                
+              </div>
+                  <div id="sd19a" class="boxtemp1a sds A19 C24 B04 D29 E07 G12 F02 H27 deskName"></div>
+
+              <div id="sd25" class="boxtemp1 sds sn25 studentName">
+
+                   <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="24">
+                
+                
+                                 
+                                 
+                
+              </div>
+                  <div id="sd25a" class="boxtemp1a sds A25 C30 B05 D30 E01 G06 F01 H26 deskName"></div>
+
+              <div id="cktd9" class="tdin tdcolor">
+                  <p>TD 9</p>
+                    
+              </div>
+
+
+
+            </div> <!-- end of 2nd block -->
+
+             <div class="col-sm-1 thirdbox"> <!-- beginning of 3rd block -->
+            <div class="rsSaveBtn btn">
+                  <p>Save</p>
+                      
+            </div>
+            <div id="cktd1" class="tdin tdcolor invisible">
+                  <p>TD what</p>
+                    
+            </div>
+
+              <div id="sd02" class="boxtemp1 sds sn02 studentName">
+
+              <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="1">
+                
+                
+                                 
+              </div>
+
+                  <div id="sd02a" class="boxtemp1a sds A02 C05 B06 D21 E26 G29 F10 H25 deskName"></div>
+
+              <div id="sd08" class="boxtemp1 sds sn08 studentName">
+
+                   <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="7">
+                
+                
+                                
+                
+              </div>
+                  <div id="sd08a" class="boxtemp1a sds A08 C11 B07 D22 E20 G23 F09 H24 deskName"></div>
+
+              <div id="sd14" class="boxtemp1 sds sn14 studentName">
+
+                    <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="13">
+                
+                
+                                 
+                
+              </div>
+
+                  <div id="sd14a" class="boxtemp1a sds A14 C17 B08 D23 E14 G17 F08 H23 deskName"></div>
+
+              <div id="sd20" class="boxtemp1 sds sn20 studentName">
+
+                    <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="19">
+                
+                
+                                
+                                 
+                
+              </div>
+
+              <div id="sd20a" class="boxtemp1a sds A20 C23 B09 D24 E08 G11 F07 H22 deskName"></div>
+
+                  <div id="sd26" class="boxtemp1 sds sn26 studentName">
+
+                      <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="25">
+                
+                
+                                 
+                                 
+                
+              </div>
+
+                  <div id="sd26a" class="boxtemp1a sds A26 C29 B10 D25 E02 G05 F06 H21 deskName"></div>
+
+
+              <div id="cktd11" class="tdin tdcolor invisible">
+                  <p>TD 11</p>
+                    
+              </div>
+
+
+
+            </div> <!-- end of 3rd block -->
+
+           
+             <div class="col-sm-1 fourthbox"> <!-- beginning of 4th block -->
+            <form>
+            <input class="nameInput raninv" placeholder="First Name" type="text" name="yourFirst" id="first">    
+            </form>
+            <div id="cktd2a" class="tdin tdcolor">
+                  <p>TD invisible 2a</p>
+                      
+            </div>
+
+              <div id="sd03" class="boxtemp1 sds sn03 studentName">
+
+                  <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="2">
+                
+                
+                                 
+                
+              </div>
+                  <div id="sd03a" class="boxtemp1a sds A03 C04 B11 D16 E27 G28 F15 H20 deskName"></div>
+
+              <div id="sd09" class="boxtemp1 sds sn09 studentName">
+
+                  <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="8">
+                
+                
+                                 
+                                 
+                
+              </div>
+
+                <div id="sd09a" class="boxtemp1a sds A09 C10 B12 D17 E21 G22 F14 H19 deskName"></div>
+
+              <div id="sd15" class="boxtemp1 sds sn15 studentName">
+
+                   <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="14">
+                
+                
+                                 
+                
+              </div>
+
+                  <div id="sd15a" class="boxtemp1a sds A15 C16 B13 D18 E15 G16 F13 H18 deskName"></div>
+
+              <div id="sd21" class="boxtemp1 sds sn21 studentName">
+                
+                  <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="20">
+                                 
+                                 
+                
+              </div>
+
+                <div id="sd21a" class="boxtemp1a sds A21 C22 B14 D19 E09 G10 F12 H17 deskName"></div>
+
+              <div id="sd27" class="boxtemp1 sds sn27 studentName">
+
+                  <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="26">
+                
+                
+                                 
+                
+              </div>
+
+                <div id="sd27a" class="boxtemp1a sds A27 C28 B15 D20 E03 G04 F11 H16 deskName"></div>
+
+              <div id="cktd8" class="tdin tdcolor">
+                  <p>TD 8</p>
+                   
+              </div>
+
+
+
+            </div> <!-- end of 4th block -->
+
+             <div class="col-sm-1 fifthbox"> <!-- beginning of 5th block -->
+            <form>
+            <input class="nameInput raninv" placeholder="Last Name" type="text" name="yourLast" id="last">    
+            </form>
+            <div id="cktd2" class="tdin tdcolor">
+                  <p>TD 2</p>
+                      
+            </div>
+
+              <div id="sd04" class="boxtemp1 sds sn04 studentName">
+
+                    <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="3">
+                
+                
+                                
+                
+              </div>
+
+                <div id="sd04a" class="boxtemp1a sds A04 C03 B16 D11 E28 G27 F20 H15 deskName"></div>
+
+
+              <div id="sd10" class="boxtemp1 sds sn10 studentName">
+                
+                     <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="9">
+                                 
+                
+              </div>
+
+                <div id="sd10a" class="boxtemp1a sds A10 C09 B17 D12 E22 G21 F19 H14 deskName"></div>
+
+              <div id="sd16" class="boxtemp1 sds sn16 studentName">
+                
+                    <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="15">
+                               
+                
+              </div>
+
+                  <div id="sd16a" class="boxtemp1a sds A16 C15 B18 D13 E16 G15 F18 H13 deskName"></div>
+
+              <div id="sd22" class="boxtemp1 sds sn22 studentName">
+                
+                    <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="21">
+                               
+                
+              </div>
+
+                <div id="sd22a" class="boxtemp1a sds A22 C21 B19 D14 E10 G09 F17 H12 deskName"></div>
+
+              <div id="sd28" class="boxtemp1 sds sn28 studentName">
+
+                    <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="27">
+                
+                                
+                
+              </div>
+                  <div id="sd28a" class="boxtemp1a sds A28 C27 B20 D15 E04 G03 F16 H11 deskName"></div>
+
+              <div id="cktd9a" class="tdin tdcolor">
+                  <p>Invisible 9</p>
+                      
+              </div>
+
+
+
+            </div> <!-- end of 5th block -->
+
+            <div class="col-sm-1 sixthbox"> <!-- beginning of 6th block -->
+            <form>
+            <input class="nameInput raninv" placeholder="Seat Number" type="text" name="yourSeat" id="seat">    
+            </form>
+            <div id="cktd2a" class="tdin tdcolor invisible">
+                  <p>Invisible 2</p>
+                      
+            </div>
+
+              <div id="sd05" class="boxtemp1 sds sn05 studentName">
+
+                    <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="4">
+                
+                
+                                
+                
+              </div>
+                <div id="sd05a" class="boxtemp1a sds A05 C02 B21 D06 E29 G26 F25 H10 deskName"></div>
+
+              <div id="sd11" class="boxtemp1 sds sn11 studentName">
+
+                    <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="10">
+                
+                
+                                
+                
+              </div>
+                <div id="sd11a" class="boxtemp1a sds A11 C08 B22 D07 E23 G20 F24 H09 deskName"></div>
+
+              <div id="sd17" class="boxtemp1 sds sn17 studentName">
+                      
+                      <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="16">
+                
+                            
+                
+              </div>
+                  <div id="sd17a" class="boxtemp1a sds A17 C14 B23 D08 E17 G14 F23 H08 deskName"></div>
+
+
+              <div id="sd23" class="boxtemp1 sds sn23 studentName">
+                    
+                    <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="22">
+                
+                                
+                
+              </div>
+                  <div id="sd23a" class="boxtemp1a sds A23 C20 B24 D09 E11 G08 F22 H07 deskName"></div>
+
+              <div id="sd29" class="boxtemp1 sds sn29 studentName">
+
+                    <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="28">
+                
+                
+                               
+              </div>
+
+                <div id="sd29a" class="boxtemp1a sds A29 C26 B25 D10 E05 G02 F21 H06 deskName"></div>
+
+              <div id="cktd11"class="tdin tdcolor invisible">
+                  <p>TD 11</p>
+                   
+              </div>
+
+
+
+            </div> <!-- end of 6th block -->
+
+              <div class="col-sm-1 seventhbox"> <!-- beginning of 7th block -->
+            <div id="add" class="addBtn raninv btn">
+                  <p>Add</p>
+                      
+            </div>
+            <div id="cktd3" class="tdin tdcolor">
+                  <p>TD3</p>
+                      
+            </div>
+
+              <div id="sd06" class="boxtemp1 sds sn06 studentName">
+
+                    <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="5">
+                
+                
+                               
+              </div>
+
+                <div id="sd26a" class="boxtemp1a sds A06 C01 B26 D01 E30 G25 F30 H05 deskName"></div>
+
+              <div id="sd12" class="boxtemp1 sds sn12 studentName">
+                
+                    <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="11">
+                                
+              </div>
+
+                <div id="sd12a" class="boxtemp1a sds A12 C07 B27 D02 E24 G19 F29 H04 deskName"></div>
+
+              <div id="sd18" class="boxtemp1 sds sn18 studentName">
+                
+                 <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="17">
+                
+                               
+                
+              </div>
+
+                <div id="sd18a" class="boxtemp1a sds A18 C13 B28 D03 E18 G13 F28 H03 deskName"></div>
+
+              <div id="sd24" class="boxtemp1 sds sn24 studentName">
+                
+                <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="23">
+                                
+                
+              </div>
+                  <div id="sd24a" class="boxtemp1a sds A24 C19 B29 D04 E12 G07 F27 H02 deskName"></div>
+
+              <div id="sd30" class="boxtemp1 sds sn30 studentName">
+
+                  <input type="checkbox" class= "seatbtn" name="sdesk" aria-label="..." value="29">
+                
+                
+                               
+                
+              </div>
+
+                <div id="sd30a" class="boxtemp1a sds A30 C25 B30 D05 E06 G01 F26 H01 deskName"></div>
+
+              <div id="cktd7" class="tdin tdcolor">
+                  <p>TD 7</p>
+                      
+              </div>
+
+
+
+            </div> <!-- end of 7th block -->
+
+            <div class="col-sm-3 eighthbox"> <!-- beginning of 8th -->
+      
+      <div id="cktd4" class="eighthcolumn tdcolor">
+        <p>TD4</p>
+        
+      </div>
+      <div id="cktd5" class="eighthcolumn tdcolor">
+        <p>TD5</p>
+
+      </div>
+      <div id="cktd6" class="eighthcolumn tdcolor">
+        <p>TD6</p>
+      </div>
+    </div> <!-- end of 8th block -->
+
+
+          </div> <!-- placeholder-->
+
+          
+        </div> <!-- dashboard -->
+      </div> <!-- row -->
+    </div> <!-- container fluid -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="assets/dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript">
+
+
+
+
+    </script>
+    <script type="text/javascript" src="javascript/randomseating.js"></script>
+    <script type="text/javascript" src="javascript/routingbuttons.js"></script>
+  </body>
+</html>
