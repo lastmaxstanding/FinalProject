@@ -103,7 +103,8 @@ app.get('/roster', function(req, res) {
 
  app.post('/roster', function(req, res){
   console.log(req.body['updatedRoster']);
-        db.students.update ({"_id" : mongojs.ObjectId("57d728e9afd3f12742d5241c")}, {$set: {"name": req.body['updatedRoster[]']}}, function(err, docs){
+  
+        db.students.update ({"_id" : mongojs.ObjectId("57dd71bddcba0f1bc33924dc")}, {$set: {"name": req.body['updatedRoster[]']}}, function(err, docs){
             if (err) throw err
             res.send('success');
         });
