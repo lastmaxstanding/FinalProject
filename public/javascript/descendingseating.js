@@ -64,6 +64,19 @@ for (var d=0; d<sdA.length && d<sdNumber.length; d++) {
 $('#cktd2a').css('opacity', '0');
 $('#cktd9a').css('opacity', '0');
 
+$('#cktd1').css('opacity', '1');
+$('#cktd2').css('opacity', '0');
+$('#cktd3').css('opacity', '0');
+$('#cktd4').css('opacity', '0');
+$('#cktd5').css('opacity', '0');
+$('#cktd6').css('opacity', '0');
+$('#cktd7').css('opacity', '0');
+$('#cktd8').css('opacity', '0');
+$('#cktd9').css('opacity', '0');
+$('#cktd10').css('opacity', '0');
+$('#cktd11').css('opacity', '0');
+$('#cktd12').css('opacity', '0');
+
 $('.tdSelectBtn').click(function(){
 var temp1 = $("input[value='td1']:checked").val();
 var temp2 = $("input[value='td2']:checked").val();

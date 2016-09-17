@@ -1,10 +1,17 @@
 $(document).ready (function() {
 
-	$(".csSelectBtn").on("click", function(){
-		window.location.href="/";
-		s
+	$(".startBtn").on("click", function() {
+		window.location.href="/currentseating";
+
 		return false;
 	});
+
+	$(".csSelectBtn").on("click", function() {
+		window.location.href="/currentseating";
+
+		return false;
+	});
+
 
 	$(".ranSeatBtn").on("click", function(){
 		window.location.href="/randomseating";
@@ -36,35 +43,7 @@ $(document).ready (function() {
 		return false;
 	});
 
-	$("#faqs").on("click", function() {
-		window.location.href="/faq";
 
-		return false;
-	});
-
-	$("#loginButton").on("click", function(){
-		window.location.href="/login";
-
-		return false;
-	});
-
-	$("#registerButton").on("click", function(){
-		window.location.href="/register";
-
-		return false;
-	});
-
-	$("#logoutButton").on("click", function(){
-		window.location.href="/logout";
-
-		return false;
-	});
-
-	$("#contactUs").on("click", function(){
-		window.location.href="/contact";
-
-		return false;
-	});
 
 });
 
