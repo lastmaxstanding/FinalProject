@@ -270,7 +270,7 @@ $(document).ready(function() {
         success: function(studentapi) {
                 var tempR = [];
                 var clonedRoster = [];
-                var max;
+                
 
                 for (var d = 0; d < studentapi.length; d++) {
                     tempR.push(studentapi[d].name);
