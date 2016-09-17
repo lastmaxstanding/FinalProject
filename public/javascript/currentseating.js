@@ -296,6 +296,8 @@ if (tempR[0]) {
 	if (clonedRoster.length > 30) 
 	clonedRoster.length = 30;
 
+}
+
 	$('.removeBtn').click(function(){
 		var clicked = [];
 		// var clonedRoster = [];//var clonedRoster = tempR.slice(); //clones if no input
@@ -370,7 +372,7 @@ if (tempR[0]) {
 
 			}); //closes add button
 
-}
+
 
 	$('.saveBtn').on('click', function(){
 
