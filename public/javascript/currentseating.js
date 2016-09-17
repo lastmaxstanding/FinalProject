@@ -272,7 +272,7 @@ if(temp1){
 	    	}
 
 	    console.log(tempR[0]);
-	    
+
 if (tempR[0]) {
 	 for (var d=0; d<sdNames.length && d<tempR[0].length; d++) {
 
@@ -286,7 +286,7 @@ if (tempR[0]) {
 			'</div><br/>'));
 	 
 	}
-}
+
 
 	console.log(tempR[0]);
 
@@ -369,6 +369,8 @@ if (tempR[0]) {
  		
 
 			}); //closes add button
+
+}
 
 	$('.saveBtn').on('click', function(){
 
