@@ -344,7 +344,7 @@ if(temp1){
 		$(sdNames[c].find('.studentName').html(studentNameString2));
 
 
-	 location.reload();
+	 
 	}
 				
 				
@@ -402,6 +402,8 @@ $.ajax({
         
 
 		}); //closes 2nd ajax
+
+	location.reload();
 
 }); //closes save button
 
