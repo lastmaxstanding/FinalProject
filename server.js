@@ -21,7 +21,8 @@ app.use(express.static('public'));
 
 // mongojs configuration
 var mongojs = require('mongojs');
-var databaseUrl = "classRoster";
+//var databaseUrl = "classRoster";
+var databaseUrl = process.env.MONGODB_URI;
 var collections = ["students"];
 
 // hook our mongojs config to the db var
