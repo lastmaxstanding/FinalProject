@@ -358,6 +358,16 @@ margin-left:25px;
 
 }
 
+@media (max-width: 1024px) {
+  .gColor{
+  background-color: #FFF380;
+  margin-left: -15px;
+  font-size:75px;
+  text-align: left;
+
+}
+}
+
 
 .inputcolor{
   background-color:grey;
