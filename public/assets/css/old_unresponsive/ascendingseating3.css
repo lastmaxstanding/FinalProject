@@ -103,17 +103,6 @@ body {
   display: inline-block;
   border-radius: 50%;
 }
-.randomBtn {
-
-  padding: 0px;
-  height:25px;
-  width:125px;
-  background-color: hotpink;
-  margin-bottom:10px;
-  color:black;
-
-
-}
 
 .sdRadio, .tdRadio{
 margin-left:25px;
@@ -215,30 +204,6 @@ margin-left:25px;
   font-size:15px;
 }
 
-.addBtn {
-
-  padding: 0px;
-  height:25px;
-  width:125px;
-  background-color: gainsboro;
-  margin-bottom:10px;
-  color:black;
-
-
-}
-
-.rsSaveBtn {
-
-  padding: 0px;
-  height:25px;
-  width:125px;
-  background-color: palegreen;
-  margin-bottom:10px;
-  color:black;
-
-
-}
-
 
 
 .sdTem {
@@ -266,236 +231,222 @@ margin-left:25px;
 
 }
 
-.nameInput {
+.fName {
 
+
+position:absolute;
+top: 89px;
+left: 355px;
+height:25px;
+width:125px;
+margin-bottom:10px;
+color:black;
+opacity:0;
+
+
+}
+
+
+
+@media (max-width: 1024px) {
+.fName {
+
+
+position:absolute;
+top: 89px;
+left: 265px;
+height:25px;
+width:80px;
+margin-bottom:10px;
+color:black;
+opacity:0;
+
+
+}
+
+}
+
+@media (max-width: 768px) {
+.fName {
+
+
+position:absolute;
+top: 89px;
+left: 188px;
+height:25px;
+width:80px;
+margin-bottom:10px;
+color:black;
+opacity:0;
+
+
+}
+
+}
+
+.lName {
+
+
+position:absolute;
+top: 89px;
+left: 495px;
+height:25px;
+width:125px;
+margin-bottom:10px;
+color:black;
+opacity:0;
+
+
+}
+
+@media (max-width: 1024px) {
+.lName {
+
+
+position:absolute;
+top: 89px;
+left: 360px;
+height:25px;
+width:80px;
+margin-bottom:10px;
+color:black;
+opacity:0;
+
+
+}
+
+}
+
+@media (max-width: 1024px) {
+.lName {
+
+
+position:absolute;
+top: 89px;
+left: 269px;
+height:25px;
+width:80px;
+margin-bottom:10px;
+color:black;
+opacity:0;
+
+
+}
+
+}
+
+.sNum {
+
+
+position:absolute;
+top: 89px;
+left: 635px;
+height:25px;
+width:125px;
+margin-bottom:10px;
+color:black;
+opacity:0;
+
+
+}
+
+@media (max-width: 1024px) {
+.sNum {
+
+
+position:absolute;
+top: 89px;
+left: 455px;
+height:25px;
+width:80px;
+margin-bottom:10px;
+color:black;
+opacity:0;
+
+
+}
+
+}
+
+@media (max-width: 768px) {
+.sNum {
+
+
+position:absolute;
+top: 89px;
+left: 350px;
+height:25px;
+width:80px;
+margin-bottom:10px;
+color:black;
+opacity:0;
+
+
+}
+
+}
+
+
+
+.csAddBtn {
+
+  position:absolute;
+  top: 89px;
+  left: 775px;
   padding: 0px;
   height:25px;
   width:125px;
-  
-  margin-bottom:10px;
+  background-color: yellow;
+  margin-bottom:45px;
+  text-align:center;
   color:black;
-
-
+  opacity:0;
 }
 
-.seatbtn {
+@media (max-width: 1024px) {
+.csAddBtn {
 
+  position:absolute;
+  top: 89px;
+  left: 550px;
   padding: 0px;
-  background-color: red;
- 
+  height:25px;
+  width:80px;
+  background-color: yellow;
+  margin-bottom:45px;
+  text-align:center;
   color:black;
-
+  opacity:0;
+}
 
 }
 
-.tdin{
+@media (max-width: 768px) {
+.csAddBtn {
 
+  position:absolute;
+  top: 89px;
+  left: 431px;
   padding: 0px;
   height:25px;
-  width:125px;
-  background-color: #808CFF;
-  margin-bottom:10px;
-  color:white;
-
+  width:80px;
+  background-color: yellow;
+  margin-bottom:45px;
+  text-align:center;
+  color:black;
+  opacity:0;
+}
 
 }
 
-
-
-.firstbox {
-  margin-top:70px;
-  padding:0px;
-  background-color: white;
-  text-align: center;
-  width:10px;
-  
-  
-} 
-
- .eighthbox {
-  margin-left: 25px;
-  margin-top:70px;
-  padding:0px;
-  background-color: white;
-  text-align: center;
-  width:10px;
-  
-  
-} 
-
-
-
-.inputcolor{
-  background-color:grey;
-}
-
-
-.firstcolumn, .eighthcolumn{
-  padding: 0px;
-  height:150px;
-  width:30px;
-  background-color: #808CFF;
-  margin-bottom:100px;
-  color:white;
-}
-
-.secondbox, .thirdbox, .fourthbox, .fifthbox, .sixthbox, .seventhbox {
-  padding:0px;
-  background-color: white;
-  text-align: center;
-  margin-left:30px;
-  
-}
-
- 
-
-.secondcolumn, .thirdcolumn, .fourthcolumn, .fifthcolumn {
-  
-  padding: 0px;
-  height:125px;
-  width:125px;
-  background-color: #808CFF;
-  margin-bottom:120px;
-  color:white;
-}
-
-
-
-.boxtemp1, .boxtemp2, .boxtemp3, .boxtemp4 {
-
-  width:125px;
-  height:90px;
-  margin-bottom:0px;
-  background-color: hotpink;
-  border-color:red;
-  border-width:5px;
-}
-
-.boxtemp1a {
-
-  width:125px;
-  height:25px;
-  margin-bottom:10px;
-  background-color: black;
-  border-color:red;
-  border-width:5px;
-  color:white;
-}
-
-.boxtemp5 {
-
-
-
-  width:125px;
-  height:125px;
-  margin-bottom:55px;
-  background-color: grey;
-  border-color:red;
-  border-width:5px;
-
-
-}
 
 .input-group-addon{
   background-color: black;
   border:black;
 }
-  
-
-.floor{
-  display:block;
-  background-color: #ddffff;
-}
-
-.well{
-  padding:110px;
-  background-color: white;
-  
-} 
 
 
-
-
-
-.template1a, .template3a, .template5a, .template7a  {
-    position: absolute;
-    top: 200px;
-    left: 20px;
-    font-size: 12px;
-    color:white;
-    
-}
-
-.template1b, .template3b, .template5b, .template7b {
-    position: absolute;
-    top: 200px;
-    left: 135px;
-    font-size: 40px;
-    color:white;
-    
-}
-
-.template1c, .template3c, .template5c, .template7c {
-    position: absolute;
-    top: 310px;
-    left: 20px;
-    font-size: 40px;
-    color:white;
-    
-}
-
-.template1d, .template3d, .template5d, .template7d {
-    position: absolute;
-    top: 310px;
-    left: 135px;
-    font-size: 40px;
-    color:white;
-    
-}
-.template2a, .template4a, .template6a, .template8a  {
-    position: absolute;
-    top: 495px;
-    left: 20px;
-    font-size: 40px;
-    color:white;
-    
-}
-
-.template2b, .template4b, .template6b, .template8b{
-    position: absolute;
-    top: 495px;
-    left: 135px;
-    font-size: 40px;
-    color:white;
-    
-}
-
-.template2c, .template4c, .template6c, .template8c {
-    position: absolute;
-    top: 605px;
-    left: 20px;
-    font-size: 40px;
-    color:white;
-    
-}
-
-.template2d, .template4d, .template6d, .template8d{
-    position: absolute;
-    top: 605px;
-    left: 135px;
-    font-size: 40px;
-    color:white;
-    
-}
-
-.tds {
-
-height: 40px;
-width: 100px;
-background-color: powderblue;
-}
-
-#random {
+.csRemoveBtn {
 
   position:absolute;
   top: 89px;
@@ -503,14 +454,15 @@ background-color: powderblue;
   padding: 0px;
   height:25px;
   width:125px;
-  background-color: hotpink;
+  background-color: red;
   margin-bottom:45px;
   text-align:center;
   color:black;
+  opacity:0;
 }
 
 @media (max-width: 1024px) {
-#random {
+.csRemoveBtn {
 
   position:absolute;
   top: 89px;
@@ -518,16 +470,17 @@ background-color: powderblue;
   padding: 0px;
   height:25px;
   width:80px;
-  background-color: hotpink;
+  background-color: red;
   margin-bottom:45px;
   text-align:center;
   color:black;
+  opacity:0;
 }
 
 }
 
 @media (max-width: 768px) {
-#random {
+.csRemoveBtn {
 
   position:absolute;
   top: 89px;
@@ -535,7 +488,55 @@ background-color: powderblue;
   padding: 0px;
   height:25px;
   width:80px;
-  background-color: hotpink;
+  background-color: red;
+  margin-bottom:45px;
+  text-align:center;
+  color:black;
+  opacity:0;
+}
+
+}
+
+.csSaveBtn {
+
+  position:absolute;
+  top: 89px;
+  left: 215px;
+  padding: 0px;
+  height:25px;
+  width:125px;
+  background-color: palegreen;
+  margin-bottom:45px;
+  text-align:center;
+  color:black;
+}
+
+@media (max-width: 1024px) {
+.csSaveBtn {
+
+  position:absolute;
+  top: 89px;
+  left: 170px;
+  padding: 0px;
+  height:25px;
+  width:80px;
+  background-color: palegreen;
+  margin-bottom:45px;
+  text-align:center;
+  color:black;
+}
+
+}
+@media (max-width: 768px) {
+.csSaveBtn {
+
+  position:absolute;
+  top: 89px;
+  left: 107px;
+  padding: 0px;
+  height:25px;
+  width:80px;
+  background-color: palegreen;
   margin-bottom:45px;
   text-align:center;
   color:black;
@@ -543,7 +544,13 @@ background-color: powderblue;
 
 }
 
-#cktd1{
+
+
+
+
+/* teacher desks */
+
+#cktd1{               /* 1680x1050 resolution */
   position:absolute;
   top: 119px;
   left: 75px;
@@ -584,7 +591,7 @@ background-color: powderblue;
   color:black;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) { /* 1024 resolution */
 #cktd1{
   position:absolute;
   top: 119px;
@@ -626,7 +633,7 @@ background-color: powderblue;
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* 768 resolution */
 #cktd1{
   position:absolute;
   top: 124px;
@@ -1037,85 +1044,11 @@ background-color: powderblue;
   color:black;
 }
 
-}
+} 
 
-#remove {
-  float:left;
-  height:60px;
-  width: 100px;
-  text-align: center;
-  background-color: red;
-  font-size:18px;
-}
-
-#saveRandom {
-  position:absolute;
-  top: 89px;
-  left: 215px;
-  padding: 0px;
-  height:25px;
-  width:125px;
-  background-color: palegreen;
-  margin-bottom:10px;
-  color:black;
-  text-align:center;
-}
-
-@media (max-width: 1024px) {
-#saveRandom {
-  position:absolute;
-  top: 89px;
-  left: 170px;
-  padding: 0px;
-  height:25px;
-  width:80px;
-  background-color: palegreen;
-  margin-bottom:10px;
-  color:black;
-  text-align:center;
-}
-
-}
-
-@media (max-width: 768px) {
-#saveRandom {
-  position:absolute;
-  top: 89px;
-  left: 107px;
-  padding: 0px;
-  height:25px;
-  width:80px;
-  background-color: palegreen;
-  margin-bottom:10px;
-  color:black;
-  text-align:center;
-}
-
-}
-
-#reset {
-  float:left;
-  height:60px;
-  width: 100px;
-  text-align: center;
-  background-color: orange;
-  font-size:18px;
-}
+ /* end of teacher desks */
 
 
-.great{
-    padding: 0px;
-  background-color: red;
- 
-  color:black;
-}
-.bigBox {
-  float:left;
-  height: 605px;
-  width: 725px;
-  background-color: #151B54; 
-
-}
 .sds {
 
 
@@ -1123,7 +1056,7 @@ background-color: powderblue;
 height: 90px;
 width: 125px;
 text-align:center;
-background-color: #2B547E;
+background-color: silver;
 
 }
 
@@ -1133,7 +1066,7 @@ background-color: #2B547E;
 height: 77px;
 width: 80px;
 text-align:center;
-background-color: #2B547E;
+background-color: silver;
 
 }
 }
@@ -1144,7 +1077,7 @@ background-color: #2B547E;
 height: 77px;
 width: 80px;
 text-align:center;
-background-color: #2B547E;
+background-color: silver;
 
 }
 }
@@ -1177,11 +1110,16 @@ background-color: black;
 }
 }
 
+.dsCheck{
+
+  opacity:0;
+}
+
 #sd01{
 position:absolute;
 top: 150px;
 left: 75px;
-background-color: hotpink;
+
 
 }
 
@@ -1189,7 +1127,7 @@ background-color: hotpink;
 position:absolute;
 top: 240px;
 left: 75px;
-background-color: black;
+
 
 }
 
@@ -1198,7 +1136,7 @@ background-color: black;
 position:absolute;
 top: 150px;
 left: 75px;
-background-color: hotpink;
+
 
 }
 
@@ -1206,7 +1144,7 @@ background-color: hotpink;
 position:absolute;
 top: 227px;
 left: 75px;
-background-color: black;
+
 
 }
 }
@@ -1216,7 +1154,7 @@ background-color: black;
 position:absolute;
 top: 150px;
 left: 26px;
-background-color: hotpink;
+
 
 }
 
@@ -1224,7 +1162,7 @@ background-color: hotpink;
 position:absolute;
 top: 227px;
 left: 26px;
-background-color: black;
+
 
 }
 }
@@ -1234,7 +1172,7 @@ background-color: black;
 position:absolute;
 top: 150px;
 left: 215px;
-background-color: hotpink;
+
 
 }
 
@@ -1242,7 +1180,7 @@ background-color: hotpink;
 position:absolute;
 top: 240px;
 left: 215px;
-background-color: black;
+
 
 }
 
@@ -1251,7 +1189,7 @@ background-color: black;
 position:absolute;
 top: 150px;
 left: 170px;
-background-color: hotpink;
+
 
 }
 
@@ -1259,7 +1197,7 @@ background-color: hotpink;
 position:absolute;
 top: 227px;
 left: 170px;
-background-color: black;
+
 
 }
 
@@ -1270,7 +1208,7 @@ background-color: black;
 position:absolute;
 top: 150px;
 left: 107px;
-background-color: hotpink;
+
 
 }
 
@@ -1278,7 +1216,7 @@ background-color: hotpink;
 position:absolute;
 top: 227px;
 left: 107px;
-background-color: black;
+
 
 }
 
@@ -1288,7 +1226,7 @@ background-color: black;
 position:absolute;
 top: 150px;
 left: 355px;
-background-color: hotpink;
+
 
 }
 
@@ -1296,7 +1234,7 @@ background-color: hotpink;
 position:absolute;
 top: 240px;
 left: 355px;
-background-color: black;
+
 
 }
 
@@ -1305,7 +1243,7 @@ background-color: black;
 position:absolute;
 top: 150px;
 left: 265px;
-background-color: hotpink;
+
 
   }
 
@@ -1313,7 +1251,7 @@ background-color: hotpink;
 position:absolute;
 top: 227px;
 left: 265px;
-background-color: black;
+
 
   }
 
@@ -1324,7 +1262,7 @@ background-color: black;
 position:absolute;
 top: 150px;
 left: 188px;
-background-color: hotpink;
+
 
 }
 
@@ -1332,7 +1270,7 @@ background-color: hotpink;
 position:absolute;
 top: 227px;
 left: 188px;
-background-color: black;
+
 
 }
 
@@ -1342,7 +1280,7 @@ background-color: black;
 position:absolute;
 top: 150px;
 left: 495px;
-background-color: hotpink;
+
 
 }
 
@@ -1350,7 +1288,7 @@ background-color: hotpink;
 position:absolute;
 top: 240px;
 left: 495px;
-background-color: black;
+
 
 }
 
@@ -1359,7 +1297,7 @@ background-color: black;
 position:absolute;
 top: 150px;
 left: 360px;
-background-color: hotpink;
+
 
 }
 
@@ -1367,7 +1305,7 @@ background-color: hotpink;
 position:absolute;
 top: 227px;
 left: 360px;
-background-color: black;
+
 
 }
 
@@ -1378,7 +1316,7 @@ background-color: black;
 position:absolute;
 top: 150px;
 left: 269px;
-background-color: hotpink;
+
 
 }
 
@@ -1386,7 +1324,7 @@ background-color: hotpink;
 position:absolute;
 top: 227px;
 left: 269px;
-background-color: black;
+
 
 }
 
@@ -1396,7 +1334,7 @@ background-color: black;
 position:absolute;
 top: 150px;
 left: 635px;
-background-color: hotpink;
+
 
 }
 
@@ -1404,7 +1342,7 @@ background-color: hotpink;
 position:absolute;
 top: 240px;
 left: 635px;
-background-color: black;
+
 
 }
 
@@ -1413,7 +1351,7 @@ background-color: black;
 position:absolute;
 top: 150px;
 left: 455px;
-background-color: hotpink;
+
 
 }
 
@@ -1421,7 +1359,7 @@ background-color: hotpink;
 position:absolute;
 top: 227px;
 left: 455px;
-background-color: black;
+
 
 }
 
@@ -1432,7 +1370,7 @@ background-color: black;
 position:absolute;
 top: 150px;
 left: 350px;
-background-color: hotpink;
+
 
 }
 
@@ -1440,7 +1378,7 @@ background-color: hotpink;
 position:absolute;
 top: 227px;
 left: 350px;
-background-color: black;
+
 
 }
 
@@ -1450,7 +1388,7 @@ background-color: black;
 position:absolute;
 top: 150px;
 left: 775px;
-background-color: hotpink;
+
 
 }
 
@@ -1458,7 +1396,7 @@ background-color: hotpink;
 position:absolute;
 top: 240px;
 left: 775px;
-background-color: black;
+
 
 }
 
@@ -1467,7 +1405,7 @@ background-color: black;
 position:absolute;
 top: 150px;
 left: 550px;
-background-color: hotpink;
+
 
 }
 
@@ -1475,7 +1413,7 @@ background-color: hotpink;
 position:absolute;
 top: 227px;
 left: 550px;
-background-color: black;
+
 
 }
 
@@ -1486,7 +1424,7 @@ background-color: black;
 position:absolute;
 top: 150px;
 left: 431px;
-background-color: hotpink;
+
 
 }
 
@@ -1494,7 +1432,7 @@ background-color: hotpink;
 position:absolute;
 top: 227px;
 left: 431px;
-background-color: black;
+
 
 }
 
@@ -1504,7 +1442,7 @@ background-color: black;
 position:absolute;
 top: 275px;
 left: 75px;
-background-color: hotpink;
+
 
 }
 
@@ -1512,7 +1450,7 @@ background-color: hotpink;
 position:absolute;
 top: 365px;
 left: 75px;
-background-color: black;
+
 
 }
 
@@ -1521,7 +1459,7 @@ background-color: black;
 position:absolute;
 top: 263px;
 left: 75px;
-background-color: hotpink;
+
 
 }
 
@@ -1529,7 +1467,7 @@ background-color: hotpink;
 position:absolute;
 top: 340px;
 left: 75px;
-background-color: black;
+
 
 }
 
@@ -1540,7 +1478,7 @@ background-color: black;
 position:absolute;
 top: 253px;
 left: 26px;
-background-color: hotpink;
+
 
 }
 
@@ -1548,7 +1486,7 @@ background-color: hotpink;
 position:absolute;
 top: 330px;
 left: 26px;
-background-color: black;
+
 
 }
 
@@ -1559,7 +1497,7 @@ background-color: black;
 position:absolute;
 top: 275px;
 left: 215px;
-background-color: hotpink;
+
 
 }
 
@@ -1567,7 +1505,7 @@ background-color: hotpink;
 position:absolute;
 top: 365px;
 left: 215px;
-background-color: black;
+
 
 }
 
@@ -1576,7 +1514,7 @@ background-color: black;
 position:absolute;
 top: 263px;
 left: 170px;
-background-color: hotpink;
+
 
 }
 
@@ -1584,7 +1522,7 @@ background-color: hotpink;
 position:absolute;
 top: 340px;
 left: 170px;
-background-color: black;
+
 
 }
 
@@ -1595,7 +1533,7 @@ background-color: black;
 position:absolute;
 top: 253px;
 left: 107px;
-background-color: hotpink;
+
 
 }
 
@@ -1603,7 +1541,7 @@ background-color: hotpink;
 position:absolute;
 top: 330px;
 left: 107px;
-background-color: black;
+
 
 }
 
@@ -1613,7 +1551,7 @@ background-color: black;
 position:absolute;
 top: 275px;
 left: 355px;
-background-color: hotpink;
+
 
 }
 
@@ -1621,7 +1559,7 @@ background-color: hotpink;
 position:absolute;
 top: 365px;
 left: 355px;
-background-color: black;
+
 
 }
 
@@ -1630,7 +1568,7 @@ background-color: black;
 position:absolute;
 top: 263px;
 left: 265px;
-background-color: hotpink;
+
 
 }
 
@@ -1638,7 +1576,7 @@ background-color: hotpink;
 position:absolute;
 top: 340px;
 left: 265px;
-background-color: black;
+
 
 }
 }
@@ -1648,7 +1586,7 @@ background-color: black;
 position:absolute;
 top: 253px;
 left: 188px;
-background-color: hotpink;
+
 
 }
 
@@ -1656,7 +1594,7 @@ background-color: hotpink;
 position:absolute;
 top: 330px;
 left: 188px;
-background-color: black;
+
 
 }
 }
@@ -1665,7 +1603,7 @@ background-color: black;
 position:absolute;
 top: 275px;
 left: 495px;
-background-color: hotpink;
+
 
 }
 
@@ -1673,7 +1611,7 @@ background-color: hotpink;
 position:absolute;
 top: 365px;
 left: 495px;
-background-color: black;
+
 
 }
 
@@ -1682,7 +1620,7 @@ background-color: black;
 position:absolute;
 top: 263px;
 left: 360px;
-background-color: hotpink;
+
 
 }
 
@@ -1690,7 +1628,7 @@ background-color: hotpink;
 position:absolute;
 top: 340px;
 left: 360px;
-background-color: black;
+
 
 }
 
@@ -1701,7 +1639,7 @@ background-color: black;
 position:absolute;
 top: 253px;
 left: 269px;
-background-color: hotpink;
+
 
 }
 
@@ -1709,7 +1647,7 @@ background-color: hotpink;
 position:absolute;
 top: 330px;
 left: 269px;
-background-color: black;
+
 
 }
 
@@ -1719,7 +1657,7 @@ background-color: black;
 position:absolute;
 top: 275px;
 left: 635px;
-background-color: hotpink;
+
 
 }
 
@@ -1727,7 +1665,7 @@ background-color: hotpink;
 position:absolute;
 top: 365px;
 left: 635px;
-background-color: black;
+
 
 }
 
@@ -1736,7 +1674,7 @@ background-color: black;
 position:absolute;
 top: 263px;
 left: 455px;
-background-color: hotpink;
+
 
 }
 
@@ -1744,7 +1682,7 @@ background-color: hotpink;
 position:absolute;
 top: 340px;
 left: 455px;
-background-color: black;
+
 
 }
 
@@ -1755,7 +1693,7 @@ background-color: black;
 position:absolute;
 top: 253px;
 left: 350px;
-background-color: hotpink;
+
 
 }
 
@@ -1763,7 +1701,7 @@ background-color: hotpink;
 position:absolute;
 top: 330px;
 left: 350px;
-background-color: black;
+
 
 }
 
@@ -1773,7 +1711,7 @@ background-color: black;
 position:absolute;
 top: 275px;
 left: 775px;
-background-color: hotpink;
+
 
 }
 
@@ -1781,7 +1719,7 @@ background-color: hotpink;
 position:absolute;
 top: 365px;
 left: 775px;
-background-color: black;
+
 
 }
 
@@ -1790,7 +1728,7 @@ background-color: black;
 position:absolute;
 top: 263px;
 left: 550px;
-background-color: hotpink;
+
 
 }
 
@@ -1798,7 +1736,7 @@ background-color: hotpink;
 position:absolute;
 top: 340px;
 left: 550px;
-background-color: black;
+
 
 }
 
@@ -1809,7 +1747,7 @@ background-color: black;
 position:absolute;
 top: 253px;
 left: 431px;
-background-color: hotpink;
+
 
 }
 
@@ -1817,7 +1755,7 @@ background-color: hotpink;
 position:absolute;
 top: 330px;
 left: 431px;
-background-color: black;
+
 
 }
 
@@ -1827,7 +1765,7 @@ background-color: black;
 position:absolute;
 top: 400px;
 left: 75px;
-background-color: hotpink;
+
 
 }
 
@@ -1835,7 +1773,7 @@ background-color: hotpink;
 position:absolute;
 top: 490px;
 left: 75px;
-background-color: black;
+
 
 }
 
@@ -1844,7 +1782,7 @@ background-color: black;
 position:absolute;
 top: 376px;
 left: 75px;
-background-color: hotpink;
+
 
 }
 
@@ -1852,7 +1790,7 @@ background-color: hotpink;
 position:absolute;
 top: 453px;
 left: 75px;
-background-color: black;
+
 
 }
 }
@@ -1862,7 +1800,7 @@ background-color: black;
 position:absolute;
 top: 356px;
 left: 26px;
-background-color: hotpink;
+
 
 }
 
@@ -1870,7 +1808,7 @@ background-color: hotpink;
 position:absolute;
 top: 433px;
 left: 26px;
-background-color: black;
+
 
 }
 }
@@ -1879,7 +1817,7 @@ background-color: black;
 position:absolute;
 top: 400px;
 left: 215px;
-background-color: hotpink;
+
 
 }
 
@@ -1887,7 +1825,7 @@ background-color: hotpink;
 position:absolute;
 top: 490px;
 left: 215px;
-background-color: black;
+
 
 }
 
@@ -1896,7 +1834,7 @@ background-color: black;
 position:absolute;
 top: 376px;
 left: 170px;
-background-color: hotpink;
+
 
 }
 
@@ -1904,7 +1842,7 @@ background-color: hotpink;
 position:absolute;
 top: 453px;
 left: 170px;
-background-color: black;
+
 
 }
 
@@ -1915,7 +1853,7 @@ background-color: black;
 position:absolute;
 top: 356px;
 left: 107px;
-background-color: hotpink;
+
 
 }
 
@@ -1923,7 +1861,7 @@ background-color: hotpink;
 position:absolute;
 top: 433px;
 left: 107px;
-background-color: black;
+
 
 }
 
@@ -1933,7 +1871,7 @@ background-color: black;
 position:absolute;
 top: 400px;
 left: 355px;
-background-color: hotpink;
+
 
 }
 
@@ -1941,7 +1879,7 @@ background-color: hotpink;
 position:absolute;
 top: 490px;
 left: 355px;
-background-color: black;
+
 
 }
 
@@ -1950,7 +1888,7 @@ background-color: black;
 position:absolute;
 top: 376px;
 left: 265px;
-background-color: hotpink;
+
 
 }
 
@@ -1958,7 +1896,7 @@ background-color: hotpink;
 position:absolute;
 top: 453px;
 left: 265px;
-background-color: black;
+
 
 }
 
@@ -1969,7 +1907,7 @@ background-color: black;
 position:absolute;
 top: 356px;
 left: 188px;
-background-color: hotpink;
+
 
 }
 
@@ -1977,7 +1915,7 @@ background-color: hotpink;
 position:absolute;
 top: 433px;
 left: 188px;
-background-color: black;
+
 
 }
 
@@ -1987,7 +1925,7 @@ background-color: black;
 position:absolute;
 top: 400px;
 left: 495px;
-background-color: hotpink;
+
 
 }
 
@@ -1995,7 +1933,7 @@ background-color: hotpink;
 position:absolute;
 top: 490px;
 left: 495px;
-background-color: black;
+
 
 }
 
@@ -2004,7 +1942,7 @@ background-color: black;
 position:absolute;
 top: 376px;
 left: 360px;
-background-color: hotpink;
+
 
 }
 
@@ -2012,7 +1950,7 @@ background-color: hotpink;
 position:absolute;
 top: 453px;
 left: 360px;
-background-color: black;
+
 
 }
 
@@ -2023,7 +1961,7 @@ background-color: black;
 position:absolute;
 top: 356px;
 left: 269px;
-background-color: hotpink;
+
 
 }
 
@@ -2031,7 +1969,7 @@ background-color: hotpink;
 position:absolute;
 top: 433px;
 left: 269px;
-background-color: black;
+
 
 }
 
@@ -2041,7 +1979,7 @@ background-color: black;
 position:absolute;
 top: 400px;
 left: 635px;
-background-color: hotpink;
+
 
 }
 
@@ -2049,7 +1987,7 @@ background-color: hotpink;
 position:absolute;
 top: 490px;
 left: 635px;
-background-color: black;
+
 
 }
 
@@ -2058,7 +1996,7 @@ background-color: black;
 position:absolute;
 top: 376px;
 left: 455px;
-background-color: hotpink;
+
 
 }
 
@@ -2066,7 +2004,7 @@ background-color: hotpink;
 position:absolute;
 top: 453px;
 left: 455px;
-background-color: black;
+
 
 }
 
@@ -2077,7 +2015,7 @@ background-color: black;
 position:absolute;
 top: 356px;
 left: 350px;
-background-color: hotpink;
+
 
 }
 
@@ -2085,7 +2023,7 @@ background-color: hotpink;
 position:absolute;
 top: 433px;
 left: 350px;
-background-color: black;
+
 
 }
 
@@ -2095,7 +2033,7 @@ background-color: black;
 position:absolute;
 top: 400px;
 left: 775px;
-background-color: hotpink;
+
 
 }
 
@@ -2103,7 +2041,7 @@ background-color: hotpink;
 position:absolute;
 top: 490px;
 left: 775px;
-background-color: black;
+
 
 }
 
@@ -2112,7 +2050,7 @@ background-color: black;
 position:absolute;
 top: 376px;
 left: 550px;
-background-color: hotpink;
+
 
 }
 
@@ -2120,7 +2058,7 @@ background-color: hotpink;
 position:absolute;
 top: 453px;
 left: 550px;
-background-color: black;
+
 
 }
 
@@ -2131,7 +2069,7 @@ background-color: black;
 position:absolute;
 top: 356px;
 left: 431px;
-background-color: hotpink;
+
 
 }
 
@@ -2139,7 +2077,7 @@ background-color: hotpink;
 position:absolute;
 top: 433px;
 left: 431px;
-background-color: black;
+
 
 }
 
@@ -2149,7 +2087,7 @@ background-color: black;
 position:absolute;
 top: 525px;
 left: 75px;
-background-color: hotpink;
+
 
 }
 
@@ -2157,7 +2095,7 @@ background-color: hotpink;
 position:absolute;
 top: 615px;
 left: 75px;
-background-color: black;
+
 
 }
 
@@ -2166,7 +2104,7 @@ background-color: black;
 position:absolute;
 top: 489px;
 left: 75px;
-background-color: hotpink;
+
 
 }
 
@@ -2174,7 +2112,7 @@ background-color: hotpink;
 position:absolute;
 top: 566px;
 left: 75px;
-background-color: black;
+
 
 }
 }
@@ -2184,7 +2122,7 @@ background-color: black;
 position:absolute;
 top: 459px;
 left: 26px;
-background-color: hotpink;
+
 
 }
 
@@ -2192,7 +2130,7 @@ background-color: hotpink;
 position:absolute;
 top: 536px;
 left: 26px;
-background-color: black;
+
 
 }
 }
@@ -2201,7 +2139,7 @@ background-color: black;
 position:absolute;
 top: 525px;
 left: 215px;
-background-color: hotpink;
+
 
 }
 
@@ -2209,7 +2147,7 @@ background-color: hotpink;
 position:absolute;
 top: 615px;
 left: 215px;
-background-color: black;
+
 
 }
 
@@ -2218,7 +2156,7 @@ background-color: black;
 position:absolute;
 top: 489px;
 left: 170px;
-background-color: hotpink;
+
 
 }
 
@@ -2226,7 +2164,7 @@ background-color: hotpink;
 position:absolute;
 top: 566px;
 left: 170px;
-background-color: black;
+
 
 }
 
@@ -2237,7 +2175,7 @@ background-color: black;
 position:absolute;
 top: 459px;
 left: 107px;
-background-color: hotpink;
+
 
 }
 
@@ -2245,7 +2183,7 @@ background-color: hotpink;
 position:absolute;
 top: 536px;
 left: 107px;
-background-color: black;
+
 
 }
 
@@ -2255,7 +2193,7 @@ background-color: black;
 position:absolute;
 top: 525px;
 left: 355px;
-background-color: hotpink;
+
 
 }
 
@@ -2263,7 +2201,7 @@ background-color: hotpink;
 position:absolute;
 top: 615px;
 left: 355px;
-background-color: black;
+
 
 }
 
@@ -2272,7 +2210,7 @@ background-color: black;
 position:absolute;
 top: 489px;
 left: 265px;
-background-color: hotpink;
+
 
 }
 
@@ -2280,7 +2218,7 @@ background-color: hotpink;
 position:absolute;
 top: 566px;
 left: 265px;
-background-color: black;
+
 
 }
 
@@ -2291,7 +2229,7 @@ background-color: black;
 position:absolute;
 top: 459px;
 left: 188px;
-background-color: hotpink;
+
 
 }
 
@@ -2299,7 +2237,7 @@ background-color: hotpink;
 position:absolute;
 top: 536px;
 left: 188px;
-background-color: black;
+
 
 }
 
@@ -2309,7 +2247,7 @@ background-color: black;
 position:absolute;
 top: 525px;
 left: 495px;
-background-color: hotpink;
+
 
 }
 
@@ -2317,7 +2255,7 @@ background-color: hotpink;
 position:absolute;
 top: 615px;
 left: 495px;
-background-color: black;
+
 
 }
 @media (max-width: 1024px) {
@@ -2325,7 +2263,7 @@ background-color: black;
 position:absolute;
 top: 489px;
 left: 360px;
-background-color: hotpink;
+
 
 }
 
@@ -2333,7 +2271,7 @@ background-color: hotpink;
 position:absolute;
 top: 566px;
 left: 360px;
-background-color: black;
+
 
 
 }
@@ -2344,7 +2282,7 @@ background-color: black;
 position:absolute;
 top: 459px;
 left: 269px;
-background-color: hotpink;
+
 
 }
 
@@ -2352,7 +2290,7 @@ background-color: hotpink;
 position:absolute;
 top: 536px;
 left: 269px;
-background-color: black;
+
 
 
 }
@@ -2362,7 +2300,7 @@ background-color: black;
 position:absolute;
 top: 525px;
 left: 635px;
-background-color: hotpink;
+
 
 }
 
@@ -2370,7 +2308,7 @@ background-color: hotpink;
 position:absolute;
 top: 615px;
 left: 635px;
-background-color: black;
+
 
 }
 @media (max-width: 1024px) {
@@ -2378,7 +2316,7 @@ background-color: black;
 position:absolute;
 top: 489px;
 left: 455px;
-background-color: hotpink;
+
 
 }
 
@@ -2386,7 +2324,7 @@ background-color: hotpink;
 position:absolute;
 top: 566px;
 left: 455px;
-background-color: black;
+
 
 }
 }
@@ -2396,7 +2334,7 @@ background-color: black;
 position:absolute;
 top: 459px;
 left: 350px;
-background-color: hotpink;
+
 
 }
 
@@ -2404,7 +2342,7 @@ background-color: hotpink;
 position:absolute;
 top: 536px;
 left: 350px;
-background-color: black;
+
 
 }
 }
@@ -2413,7 +2351,7 @@ background-color: black;
 position:absolute;
 top: 525px;
 left: 775px;
-background-color: hotpink;
+
 
 }
 
@@ -2421,7 +2359,7 @@ background-color: hotpink;
 position:absolute;
 top: 615px;
 left: 775px;
-background-color: black;
+
 
 }
 
@@ -2430,7 +2368,7 @@ background-color: black;
 position:absolute;
 top: 489px;
 left: 550px;
-background-color: hotpink;
+
 
 }
 
@@ -2438,7 +2376,7 @@ background-color: hotpink;
 position:absolute;
 top: 566px;
 left: 550px;
-background-color: black;
+
 
 }
 }
@@ -2448,7 +2386,7 @@ background-color: black;
 position:absolute;
 top: 459px;
 left: 431px;
-background-color: hotpink;
+
 
 }
 
@@ -2456,7 +2394,7 @@ background-color: hotpink;
 position:absolute;
 top: 536px;
 left: 431px;
-background-color: black;
+
 
 }
 }
@@ -2465,7 +2403,7 @@ background-color: black;
 position:absolute;
 top: 650px;
 left: 75px;
-background-color: hotpink;
+
 
 }
 
@@ -2473,7 +2411,7 @@ background-color: hotpink;
 position:absolute;
 top: 740px;
 left: 75px;
-background-color: black;
+
 
 }
 
@@ -2482,7 +2420,7 @@ background-color: black;
 position:absolute;
 top: 602px;
 left: 75px;
-background-color: hotpink;
+
 
 }
 
@@ -2490,7 +2428,7 @@ background-color: hotpink;
 position:absolute;
 top: 679px;
 left: 75px;
-background-color: black;
+
 
 }
 }
@@ -2501,7 +2439,7 @@ background-color: black;
 position:absolute;
 top: 562px;
 left: 26px;
-background-color: hotpink;
+
 
 }
 
@@ -2509,7 +2447,7 @@ background-color: hotpink;
 position:absolute;
 top: 639px;
 left: 26px;
-background-color: black;
+
 
 }
 }
@@ -2518,7 +2456,7 @@ background-color: black;
 position:absolute;
 top: 650px;
 left: 215px;
-background-color: hotpink;
+
 
 }
 
@@ -2526,7 +2464,7 @@ background-color: hotpink;
 position:absolute;
 top: 740px;
 left: 215px;
-background-color: black;
+
 
 }
 
@@ -2535,7 +2473,7 @@ background-color: black;
 position:absolute;
 top: 602px;
 left: 170px;
-background-color: hotpink;
+
 
 }
 
@@ -2543,7 +2481,7 @@ background-color: hotpink;
 position:absolute;
 top: 679px;
 left: 170px;
-background-color: black;
+
 
 }
 }
@@ -2553,7 +2491,7 @@ background-color: black;
 position:absolute;
 top: 562px;
 left: 107px;
-background-color: hotpink;
+
 
 }
 
@@ -2561,7 +2499,7 @@ background-color: hotpink;
 position:absolute;
 top: 639px;
 left: 107px;
-background-color: black;
+
 
 }
 }
@@ -2570,7 +2508,7 @@ background-color: black;
 position:absolute;
 top: 650px;
 left: 355px;
-background-color: hotpink;
+
 
 }
 
@@ -2578,7 +2516,7 @@ background-color: hotpink;
 position:absolute;
 top: 740px;
 left: 355px;
-background-color: black;
+
 
 }
 
@@ -2587,7 +2525,7 @@ background-color: black;
 position:absolute;
 top: 602px;
 left: 265px;
-background-color: hotpink;
+
 
 }
 
@@ -2595,7 +2533,7 @@ background-color: hotpink;
 position:absolute;
 top: 679px;
 left: 265px;
-background-color: black;
+
 
 }
 }
@@ -2604,7 +2542,7 @@ background-color: black;
 position:absolute;
 top: 562px;
 left: 188px;
-background-color: hotpink;
+
 
 }
 
@@ -2612,7 +2550,7 @@ background-color: hotpink;
 position:absolute;
 top: 639px;
 left: 188px;
-background-color: black;
+
 
 }
 }
@@ -2621,7 +2559,7 @@ background-color: black;
 position:absolute;
 top: 650px;
 left: 495px;
-background-color: hotpink;
+
 
 }
 
@@ -2629,7 +2567,7 @@ background-color: hotpink;
 position:absolute;
 top: 740px;
 left: 495px;
-background-color: black;
+
 
 }
 
@@ -2638,7 +2576,7 @@ background-color: black;
 position:absolute;
 top: 602px;
 left: 360px;
-background-color: hotpink;
+
 
 }
 
@@ -2646,7 +2584,7 @@ background-color: hotpink;
 position:absolute;
 top: 679px;
 left: 360px;
-background-color: black;
+
 
 }
 }
@@ -2656,7 +2594,7 @@ background-color: black;
 position:absolute;
 top: 562px;
 left: 269px;
-background-color: hotpink;
+
 
 }
 
@@ -2664,7 +2602,7 @@ background-color: hotpink;
 position:absolute;
 top: 639px;
 left: 269px;
-background-color: black;
+
 
 }
 }
@@ -2673,7 +2611,7 @@ background-color: black;
 position:absolute;
 top: 650px;
 left: 635px;
-background-color: hotpink;
+
 
 }
 
@@ -2681,7 +2619,7 @@ background-color: hotpink;
 position:absolute;
 top: 740px;
 left: 635px;
-background-color: black;
+
 
 }
 
@@ -2690,7 +2628,7 @@ background-color: black;
 position:absolute;
 top: 602px;
 left: 455px;
-background-color: hotpink;
+
 
 }
 
@@ -2698,7 +2636,7 @@ background-color: hotpink;
 position:absolute;
 top: 679px;
 left: 455px;
-background-color: black;
+
 
 }
 }
@@ -2708,7 +2646,7 @@ background-color: black;
 position:absolute;
 top: 562px;
 left: 350px;
-background-color: hotpink;
+
 
 }
 
@@ -2716,7 +2654,7 @@ background-color: hotpink;
 position:absolute;
 top: 639px;
 left: 350px;
-background-color: black;
+
 
 }
 }
@@ -2725,7 +2663,7 @@ background-color: black;
 position:absolute;
 top: 650px;
 left: 775px;
-background-color: hotpink;
+
 
 }
 
@@ -2733,7 +2671,7 @@ background-color: hotpink;
 position:absolute;
 top: 740px;
 left: 775px;
-background-color: black;
+
 
 }
 
@@ -2742,7 +2680,7 @@ background-color: black;
 position:absolute;
 top: 602px;
 left: 550px;
-background-color: hotpink;
+
 
 }
 
@@ -2750,7 +2688,7 @@ background-color: hotpink;
 position:absolute;
 top: 679px;
 left: 550px;
-background-color: black;
+
 
 }
 }
@@ -2760,7 +2698,7 @@ background-color: black;
 position:absolute;
 top: 562px;
 left: 431px;
-background-color: hotpink;
+
 
 }
 
@@ -2768,7 +2706,7 @@ background-color: hotpink;
 position:absolute;
 top: 639px;
 left: 431px;
-background-color: black;
+
 
 }
 }

@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Ascending Seating</title>
+    <title>Ascending Seating Max</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -42,7 +42,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <img src="images/calogo.png" alt="Class App Logo" style="width:65px;height:65px;">
+          <img src="images/calogo.png" alt="desk logo" style="width:65px;height:65px;">
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -86,7 +86,7 @@
                   <input type="radio" class="tdTem" name="tdesk" aria-label="..." value="fs12">
                 </div>
             </li>
-            <li><div id="ranSeat" class="ranSeatBtn btn"><p>Random Seating</p></div></li>
+           <li><div id="ranSeat" class="ranSeatBtn btn"><p>Random Seating</p></div></li>
             <li><div id="asSeat" class="asSeatBtn btn"><p>Ascending Seating</p></div></li>
             <li><div id="dsSeat" class="dsSeatBtn btn"><p>Descending Seating</p></div></li>
             <li><div id="ranGroup" class="ranGroupBtn btn"><p>Random Groups</p></div></li>
@@ -97,467 +97,178 @@
         </div>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">Ascending Seats</h1>
+          <h1 class="page-header">Ascending Seating Max</h1>
 
-             <div class="col-sm-3 firstbox">
-      
-      <div id="cktd12" class="firstcolumn tdcolor fs12 box">
-        <p>TD 12</p>
-        
-      </div>
-      <div id="cktd11" class="firstcolumn tdcolor fs11 box">
-        <p>TD 11</p>
-      </div>
-      <div id="cktd10" class="firstcolumn tdcolor fs10 box">
-        <p>TD 10</p>
-      </div>
-    </div>
  
+        <div id="csRemove" class="csRemoveBtn">Remove</div>
+
+        <div id="asSave" class="asSaveBtn">Save</div>
+
+          <form>
+              <input class="fName" placeholder="First Name" type="text" name="yourFirst" id="first"> 
+
+              <input class="lName" placeholder="Last Name" type="text" name="yourLast" id="last"> 
+
+              <input class="sNum" placeholder="Seat Number" type="text" name="yourSeat" id="seat">   
+          </form>
+
+        <div id="csAdd" class="csAddBtn">Add</div>
+
+
+
+        <div id="cktd1" class="topDesk pos1 box fs1">TD1</div>
+        <div id="cktd2" class="topDesk pos2 box fs2">TD2</div>
+        <div id="cktd3" class="topDesk pos3 box fs3">TD3</div>
+        <div id="cktd4" class="topDesk pos4 box fs4">TD4</div>
+        <div id="cktd5" class="topDesk pos5 box fs5">TD5</div>
+        <div id="cktd6" class="topDesk pos6 box fs6">TD6</div>
+        <div id="cktd7" class="topDesk pos7 box fs7">TD7</div>
+        <div id="cktd8" class="topDesk pos8 box fs8">TD8</div>
+        <div id="cktd9" class="topDesk pos9 box fs9">TD9</div>
+        <div id="cktd10" class="topDesk pos10 box fs10">TD 10</div>
+        <div id="cktd11" class="topDesk pos11 box fs11">TD 11</div>
+        <div id="cktd12" class="topDesk pos12 box fs12">TD 12</div>
+
 
             
 
         
-          <div class="row placeholders">
-            <div class="col-sm-1 secondbox"> <!-- beginning of 2nd block -->
-            <div id="ran" class="asBtn btn">
-                  <p>Ascending</p>
-                      
-            </div>
-            <div id="cktd1" class="tdin tdcolor fs1 box">
-                  <p>TD 1</p>
-                    
-            </div>
-
-            <div id="sd01" class="boxtemp1 sds sn01 studentName">
-
-                  
-
-            
-                                 
-                
-            </div>
-                  <div id="sd01a" class="boxtemp1a sds A01 C06 B01 D26 E25 G30 F05 H30 deskName"></div>
-
-
-            <div id="sd07" class="boxtemp1 sds sn07 studentName">
-
-               
-                
-                                 
-                
-            </div>
-                  <div id="sd07a" class="boxtemp1a sds A07 C12 B02 D27 E19 G24 F04 H29 deskName"></div>
-
-              <div id="sd13" class="boxtemp1 sds sn13 studentName">
-                
-                   
-                                 
-                                 
-                
-              </div>
-                  <div id="sd13a" class="boxtemp1a sds A13 C18 B03 D28 E13 G18 F03 H28 deskName"></div>
-
-                     
-
-              <div id="sd19" class="boxtemp1 sds sn19 studentName">
-
-                   
-                
-                
-                                 
-                                 
-                
-              </div>
-                  <div id="sd19a" class="boxtemp1a sds A19 C24 B04 D29 E07 G12 F02 H27 deskName"></div>
-
-              <div id="sd25" class="boxtemp1 sds sn25 studentName">
-
-                  
-                
-                
-                                 
-                                 
-                
-              </div>
-                  <div id="sd25a" class="boxtemp1a sds A25 C30 B05 D30 E01 G06 F01 H26 deskName"></div>
-
-              <div id="cktd9" class="tdin tdcolor fs9 box">
-                  <p>TD 9</p>
-                    
-              </div>
+          
 
 
 
-            </div> <!-- end of 2nd block -->
+    
+  
+    <div id="sd01" class= "sds A01 C06 B01 D26 E25 G30 F05 H30">
+      <input type="checkbox" class="dsCheck" name="one" value="0"></div>
+          <div id="sd01a" class="sn01 littleBox">Desk01</div>
 
-             <div class="col-sm-1 thirdbox"> <!-- beginning of 3rd block -->
-            <div class="asSaveBtn btn">
-                  <p>Save</p>
-                      
-            </div>
-            <div id="cktd1" class="tdin tdcolor invisible">
-                  <p>TD what</p>
-                    
-            </div>
+    <div id="sd02" class="sds A02 C05 B06 D21 E26 G29 F10 H25">
+      <input type="checkbox" class="dsCheck" name="one" value="1"></div>
+          <div id="sd02a" class="sn02 littleBox">Desk02</div>
 
-              <div id="sd02" class="boxtemp1 sds sn02 studentName">
+    <div id="sd03" class="sds A03 C04 B11 D16 E27 G28 F15 H20">
+      <input type="checkbox" class="dsCheck" name="one" value="2"></div>
+          <div id="sd03a" class="sn03 littleBox">Desk03</div>
 
-              
-                
-                
-                                 
-              </div>
+    <div id="sd04" class="sds A04 C03 B16 D11 E28 G27 F20 H15">
+      <input type="checkbox" class="dsCheck" name="one" value="3"></div>
+          <div id="sd04a" class="sn04 littleBox">Desk04</div>
 
-                  <div id="sd02a" class="boxtemp1a sds A02 C05 B06 D21 E26 G29 F10 H25 deskName"></div>
+    <div id="sd05" class="sds A05 C02 B21 D06 E29 G26 F25 H10">
+      <input type="checkbox" class="dsCheck" name="one" value="4"></div>
+          <div id="sd05a" class="sn05 littleBox">Desk05</div>
 
-              <div id="sd08" class="boxtemp1 sds sn08 studentName">
+    <div id="sd06" class="sds A06 C01 B26 D01 E30 G25 F30 H05">
+      <input type="checkbox" class="dsCheck" name="one" value="5"></div>
+          <div id="sd06a" class="sn06 littleBox">Desk06</div>
 
-                   
-                
-                
-                                
-                
-              </div>
-                  <div id="sd08a" class="boxtemp1a sds A08 C11 B07 D22 E20 G23 F09 H24 deskName"></div>
+    <div id="sd07" class="sds A07 C12 B02 D27 E19 G24 F04 H29">
+      <input type="checkbox" class="dsCheck" name="one" value="6"></div>
+          <div id="sd07a" class="sn07 littleBox">Desk07</div>
 
-              <div id="sd14" class="boxtemp1 sds sn14 studentName">
+    <div id="sd08" class="sds A08 C11 B07 D22 E20 G23 F09 H24">
+      <input type="checkbox" class="dsCheck" name="one" value="7"></div>
+          <div id="sd08a" class="sn08 littleBox">Desk08</div>
 
-                    
+    <div id="sd09" class="sds A09 C10 B12 D17 E21 G22 F14 H19">
+      <input type="checkbox" class="dsCheck" name="one" value="8"></div>
+          <div id="sd09a" class="sn09 littleBox">Desk09</div>
 
-                
-                
-                                 
-                
-              </div>
+    <div id="sd10" class="sds A10 C09 B17 D12 E22 G21 F19 H14">
+      <input type="checkbox" class="dsCheck" name="one" value="9"></div>
+          <div id="sd10a" class="sn10 littleBox">Desk10</div>
 
-                  <div id="sd14a" class="boxtemp1a sds A14 C17 B08 D23 E14 G17 F08 H23 deskName"></div>
+    <div id="sd11" class="sds A11 C08 B22 D07 E23 G20 F24 H09">
+      <input type="checkbox" class="dsCheck" name="one" value="10"></div>
+          <div id="sd11a" class="sn11 littleBox">Desk11</div>
 
-              <div id="sd20" class="boxtemp1 sds sn20 studentName">
+    <div id="sd12" class="sds A12 C07 B27 D02 E24 G19 F29 H04">
+      <input type="checkbox" class="dsCheck" name="one" value="11"></div>
+          <div id="sd12a" class="sn12 littleBox">Desk12</div>
 
-                   
-                
-                
-                                
-                                 
-                
-              </div>
+    <div id="sd13" class="sds A13 C18 B03 D28 E13 G18 F03 H28">
+      <input type="checkbox" class="dsCheck" name="one" value="12"></div>
+          <div id="sd13a" class="sn13 littleBox">Desk13</div>
 
-              <div id="sd20a" class="boxtemp1a sds A20 C23 B09 D24 E08 G11 F07 H22 deskName"></div>
+    <div id="sd14" class="sds A14 C17 B08 D23 E14 G17 F08 H23">
+      <input type="checkbox" class="dsCheck" name="one" value="13"></div>
+          <div id="sd14a" class="sn14 littleBox">Desk14</div>
 
-                  <div id="sd26" class="boxtemp1 sds sn26 studentName">
+    <div id="sd15" class="sds A15 C16 B13 D18 E15 G16 F13 H18">
+      <input type="checkbox" class="dsCheck" name="one" value="14"></div>
+          <div id="sd15a" class="sn15 littleBox">Desk15</div>
 
-                      
-                
-                
-                                 
-                                 
-                
-              </div>
+    <div id="sd16" class="sds A16 C15 B18 D13 E16 G15 F18 H13">
+      <input type="checkbox" class="dsCheck" name="one" value="15"></div>
+          <div id="sd16a" class="sn16 littleBox">Desk16</div>
 
-                  <div id="sd26a" class="boxtemp1a sds A26 C29 B10 D25 E02 G05 F06 H21 deskName"></div>
+    <div id="sd17" class="sds A17 C14 B23 D08 E17 G14 F23 H08">
+      <input type="checkbox" class="dsCheck" name="one" value="16"></div>
+        <div id="sd17a" class="sn17 littleBox">Desk17</div>
 
+    <div id="sd18" class="sds A18 C13 B28 D03 E18 G13 F28 H03">
+      <input type="checkbox" class="dsCheck" name="one" value="17"></div>
+          <div id="sd18a" class="sn18 littleBox">Desk18</div>
 
-              <div id="cktd11" class="tdin tdcolor invisible fs11 box">
-                  <p>TD 11</p>
-                    
-              </div>
+    <div id="sd19" class="sds A19 C24 B04 D29 E07 G12 F02 H27">
+      <input type="checkbox" class="dsCheck" name="one" value="18"></div>
+          <div id="sd19a" class="sn19 littleBox">Desk19</div>
 
+    <div id="sd20" class="sds A20 C23 B09 D24 E08 G11 F07 H22">
+      <input type="checkbox" class="dsCheck" name="one" value="19"></div>
+          <div id="sd20a" class="sn20 littleBox">Desk20</div>
 
+    <div id="sd21" class="sds A21 C22 B14 D19 E09 G10 F12 H17">
+      <input type="checkbox" class="dsCheck" name="one" value="20"></div>
+          <div id="sd21a" class="sn21 littleBox">Desk21</div>
 
-            </div> <!-- end of 3rd block -->
+    <div id="sd22" class="sds A22 C21 B19 D14 E10 G09 F17 H12">
+      <input type="checkbox" class="dsCheck" name="one" value="21"></div>
+          <div id="sd22a" class="sn22 littleBox">Desk22</div>
+
+    <div id="sd23" class="sds A23 C20 B24 D09 E11 G08 F22 H07">
+      <input type="checkbox" class="dsCheck" name="one" value="22"></div>
+          <div id="sd23a" class="sn23 littleBox">Desk23</div>
+
+    <div id="sd24" class="sds A24 C19 B29 D04 E12 G07 F27 H02">
+      <input type="checkbox" class="dsCheck" name="one" value="23"></div>
+          <div id="sd24a" class="sn24 littleBox">Desk24</div>
+
+    <div id="sd25" class="sds A25 C30 B05 D30 E01 G06 F01 H26">
+      <input type="checkbox" class="dsCheck" name="one" value="24"></div>
+          <div id="sd25a" class="sn25 littleBox">Desk25</div>
+
+    <div id="sd26" class="sds A26 C29 B10 D25 E02 G05 F06 H21">
+      <input type="checkbox" class="dsCheck" name="one" value="25"></div>
+          <div id="sd26a" class="sn26 littleBox">Desk26</div>
+
+    <div id="sd27" class="sds A27 C28 B15 D20 E03 G04 F11 H16">
+      <input type="checkbox" class="dsCheck" name="one" value="26"></div>
+          <div id="sd27a" class="sn27 littleBox">Desk27</div>
+
+    <div id="sd28" class="sds A28 C27 B20 D15 E04 G03 F16 H11">
+      <input type="checkbox" class="dsCheck" name="one" value="27"></div>
+          <div id="sd28a" class="sn28 littleBox">Desk28</div>
+
+    <div id="sd29" class="sds A29 C26 B25 D10 E05 G02 F21 H06">
+      <input type="checkbox" class="dsCheck" name="one" value="28"></div>
+          <div id="sd29a" class="sn29 littleBox">Desk29</div>
+
+    <div id="sd30" class="sds A30 C25 B30 D05 E06 G01 F26 H01">
+      <input type="checkbox" class="dsCheck" name="one" value="29"></div>
+          <div id="sd30a" class="sn30 littleBox">Desk30</div>
+
+          
 
            
-             <div class="col-sm-1 fourthbox"> <!-- beginning of 4th block -->
-            <form>
-            <input class="nameInput raninv" placeholder="First Name" type="text" name="yourFirst" id="first">    
-            </form>
-            <div id="cktd2a" class="tdin tdcolor">
-                  <p>TD invisible 2a</p>
-                      
-            </div>
 
-              <div id="sd03" class="boxtemp1 sds sn03 studentName">
 
-                  
-                
-                
-                                 
-                
-              </div>
-                  <div id="sd03a" class="boxtemp1a sds A03 C04 B11 D16 E27 G28 F15 H20 deskName"></div>
-
-              <div id="sd09" class="boxtemp1 sds sn09 studentName">
-
-                  
-                
-                
-                                 
-                                 
-                
-              </div>
-
-                <div id="sd09a" class="boxtemp1a sds A09 C10 B12 D17 E21 G22 F14 H19 deskName"></div>
-
-              <div id="sd15" class="boxtemp1 sds sn15 studentName">
-
-                   
-                
-                
-                                 
-                
-              </div>
-
-                  <div id="sd15a" class="boxtemp1a sds A15 C16 B13 D18 E15 G16 F13 H18 deskName"></div>
-
-              <div id="sd21" class="boxtemp1 sds sn21 studentName">
-                
-                                 
-                                 
-                
-              </div>
-
-                <div id="sd21a" class="boxtemp1a sds A21 C22 B14 D19 E09 G10 F12 H17 deskName"></div>
-
-              <div id="sd27" class="boxtemp1 sds sn27 studentName">
-
-                  
-                
-                
-                                 
-                
-              </div>
-
-                <div id="sd27a" class="boxtemp1a sds A27 C28 B15 D20 E03 G04 F11 H16 deskName"></div>
-
-              <div id="cktd8" class="tdin tdcolor fs8 box">
-                  <p>TD 8</p>
-                   
-              </div>
-
-
-
-            </div> <!-- end of 4th block -->
-
-             <div class="col-sm-1 fifthbox"> <!-- beginning of 5th block -->
-            <form>
-            <input class="nameInput raninv" placeholder="Last Name" type="text" name="yourLast" id="last">    
-            </form>
-            <div id="cktd2" class="tdin tdcolor fs2 box">
-                  <p>TD 2</p>
-                      
-            </div>
-
-              <div id="sd04" class="boxtemp1 sds sn04 studentName">
-
-                   
-                
-                
-                                
-                
-              </div>
-
-                <div id="sd04a" class="boxtemp1a sds A04 C03 B16 D11 E28 G27 F20 H15 deskName"></div>
-
-
-              <div id="sd10" class="boxtemp1 sds sn10 studentName">
-                
-                     
-                                 
-                
-              </div>
-
-                <div id="sd10a" class="boxtemp1a sds A10 C09 B17 D12 E22 G21 F19 H14 deskName"></div>
-
-              <div id="sd16" class="boxtemp1 sds sn16 studentName">
-                
-                  
-                               
-                
-              </div>
-
-                  <div id="sd16a" class="boxtemp1a sds A16 C15 B18 D13 E16 G15 F18 H13 deskName"></div>
-
-              <div id="sd22" class="boxtemp1 sds sn22 studentName">
-                
-                   
-                               
-                
-              </div>
-
-                <div id="sd22a" class="boxtemp1a sds A22 C21 B19 D14 E10 G09 F17 H12 deskName"></div>
-
-              <div id="sd28" class="boxtemp1 sds sn28 studentName">
-
-                
-                                
-                
-              </div>
-                  <div id="sd28a" class="boxtemp1a sds A28 C27 B20 D15 E04 G03 F16 H11 deskName"></div>
-
-              <div id="cktd9a" class="tdin tdcolor">
-                  <p>Invisible 9</p>
-                      
-              </div>
-
-
-
-            </div> <!-- end of 5th block -->
-
-            <div class="col-sm-1 sixthbox"> <!-- beginning of 6th block -->
-            <form>
-            <input class="nameInput raninv" placeholder="Seat Number" type="text" name="yourSeat" id="seat">    
-            </form>
-            <div id="cktd2a" class="tdin tdcolor invisible">
-                  <p>Invisible 2</p>
-                      
-            </div>
-
-              <div id="sd05" class="boxtemp1 sds sn05 studentName">
-
-                    
-                
-                
-                                
-                
-              </div>
-                <div id="sd05a" class="boxtemp1a sds A05 C02 B21 D06 E29 G26 F25 H10 deskName"></div>
-
-              <div id="sd11" class="boxtemp1 sds sn11 studentName">
-
-                    
-                
-                
-                                
-                
-              </div>
-                <div id="sd11a" class="boxtemp1a sds A11 C08 B22 D07 E23 G20 F24 H09 deskName"></div>
-
-              <div id="sd17" class="boxtemp1 sds sn17 studentName">
-                      
-                      
-                
-                            
-                
-              </div>
-                  <div id="sd17a" class="boxtemp1a sds A17 C14 B23 D08 E17 G14 F23 H08 deskName"></div>
-
-
-              <div id="sd23" class="boxtemp1 sds sn23 studentName">
-                    
-                   
-                
-                                
-                
-              </div>
-                  <div id="sd23a" class="boxtemp1a sds A23 C20 B24 D09 E11 G08 F22 H07 deskName"></div>
-
-              <div id="sd29" class="boxtemp1 sds sn29 studentName">
-
-                    
-                
-                
-                               
-              </div>
-
-                <div id="sd29a" class="boxtemp1a sds A29 C26 B25 D10 E05 G02 F21 H06 deskName"></div>
-
-              <div id="cktd11" class="tdin tdcolor invisible fs11 box">
-                  <p>TD 11</p>
-                   
-              </div>
-
-
-
-            </div> <!-- end of 6th block -->
-
-              <div class="col-sm-1 seventhbox"> <!-- beginning of 7th block -->
-            <div id="add" class="addBtn raninv btn">
-                  <p>Add</p>
-                      
-            </div>
-            <div id="cktd3" class="tdin tdcolor fs3 box">
-                  <p>TD3</p>
-                      
-            </div>
-
-              <div id="sd06" class="boxtemp1 sds sn06 studentName">
-
-                   
-                
-                
-                               
-              </div>
-
-                <div id="sd26a" class="boxtemp1a sds A06 C01 B26 D01 E30 G25 F30 H05 deskName"></div>
-
-              <div id="sd12" class="boxtemp1 sds sn12 studentName">
-                
-                    
-                                
-              </div>
-
-                <div id="sd12a" class="boxtemp1a sds A12 C07 B27 D02 E24 G19 F29 H04 deskName"></div>
-
-              <div id="sd18" class="boxtemp1 sds sn18 studentName">
-                
-                
-                
-                               
-                
-              </div>
-
-                <div id="sd18a" class="boxtemp1a sds A18 C13 B28 D03 E18 G13 F28 H03 deskName"></div>
-
-              <div id="sd24" class="boxtemp1 sds sn24 studentName">
-                
-                
-                                
-                
-              </div>
-                  <div id="sd24a" class="boxtemp1a sds A24 C19 B29 D04 E12 G07 F27 H02 deskName"></div>
-
-              <div id="sd30" class="boxtemp1 sds sn30 studentName">
-
-                
-                
-                               
-                
-              </div>
-
-                <div id="sd30a" class="boxtemp1a sds A30 C25 B30 D05 E06 G01 F26 H01 deskName"></div>
-
-              <div id="cktd7" class="tdin tdcolor fs7 box">
-                  <p>TD 7</p>
-                      
-              </div>
-
-
-
-            </div> <!-- end of 7th block -->
-
-            <div class="col-sm-3 eighthbox"> <!-- beginning of 8th -->
-      
-      <div id="cktd4" class="eighthcolumn tdcolor fs4 box">
-        <p>TD4</p>
-        
-      </div>
-      <div id="cktd5" class="eighthcolumn tdcolor fs5 box">
-        <p>TD5</p>
-
-      </div>
-      <div id="cktd6" class="eighthcolumn tdcolor fs6 box">
-        <p>TD6</p>
-      </div>
-    </div> <!-- end of 8th block -->
-
-
-          </div> <!-- placeholder-->
-          <div id="cktd" class="tome">
-        <p>Copyright<span class="glyphicon glyphicon-copyright-mark"></span> ClassMax </p>
-      </div>
+           <!-- placeholder-->
 
           
         </div> <!-- dashboard -->
+
       </div> <!-- row -->
     </div> <!-- container fluid -->
 
@@ -571,7 +282,7 @@
     <script src="assets/js/vendor/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script type="text/javascript" src="javascript/teacherdesk.js"></script>
+    <script type="text/javascript" src="javascript/teacherdesk.js"></script>    
     <script type="text/javascript" src="javascript/ascendingseating.js"></script>
     <script type="text/javascript" src="javascript/routingbuttons.js"></script>
   </body>

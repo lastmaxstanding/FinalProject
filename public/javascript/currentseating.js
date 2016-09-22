@@ -21,17 +21,6 @@ var sdNames = [$(".sn01"), $(".sn02"), $(".sn03"), $(".sn04"), $(".sn05"), $(".s
 
 
 
-
-for (var d=0; d<sdA.length && d<sdNumber.length; d++) {
-	 $(sdA[d].html(sdNumber[d]));
-}
-	
-
-
-
-
-
-
 	$.ajax({
 	    url: "/roster",
 	    dataType: 'json',
@@ -49,7 +38,7 @@ for (var d=0; d<sdA.length && d<sdNumber.length; d++) {
 	 			console.log(studentapi[d].name);
 	    	}
 
-	 for (var d=0; d<sdNames.length && d<tempR[0].length; d++) {
+	 for (var d=0; d<sdA.length && d<tempR[0].length; d++) {
 
 	var studentNameString;
 	if (tempR[0][d] == null) {
@@ -57,8 +46,8 @@ for (var d=0; d<sdA.length && d<sdNumber.length; d++) {
 	} else {
 		studentNameString = tempR[0][d]
 	}
-		$(sdNames[d].prepend('<br/><div class="studentName">' + studentNameString + 
-			'</div>'));
+		$(sdA[d]).prepend('<br/><div class="studentName">' + studentNameString + 
+			'</div>');
 	 
 	}
 
@@ -70,12 +59,12 @@ for (var d=0; d<sdA.length && d<sdNumber.length; d++) {
 	if (clonedRoster.length > 30) 
 	clonedRoster.length = 30;
 
-	$('.removeBtn').click(function(){
+	$('.csRemoveBtn').click(function(){
 		var clicked = [];
 		// var clonedRoster = [];//var clonedRoster = tempR.slice(); //clones if no input
 		
  	 //    
- 		 $('.seatbtn:checked').each(function(){  
+ 		 $('.csCheckBox:checked').each(function(){  
 
           var values = $(this).val();
           clicked.push(clonedRoster[values]);
@@ -96,12 +85,12 @@ for (var d=0; d<sdA.length && d<sdNumber.length; d++) {
 
 	
 
-	$('.addBtn').click(function(){
+	$('.csAddBtn').click(function(){
 
-		var valLast = $('#last').val().trim();
-		var valFirst = $('#first').val().trim();
+		var valLast = $('.lName').val().trim();
+		var valFirst = $('.fName').val().trim();
 		
-		var valSeat = parseInt($('#seat').val().trim() - 1);
+		var valSeat = parseInt($('.sNum').val().trim() - 1);
 		var valFL = valLast +'</br>'+ valFirst;
 
 
@@ -112,14 +101,14 @@ for (var d=0; d<sdA.length && d<sdNumber.length; d++) {
 			clonedRoster.length = 30;
 
 
-	for (var c=0; c<clonedRoster.length && c<sdNames.length; c++){
+	for (var c=0; c<clonedRoster.length && c<sdA.length; c++){
 			var studentNameString2;
 			if(clonedRoster[c] == null) {
 		studentNameString2 = "&nbsp"
 		} else {
 		studentNameString2 = clonedRoster[c];
 		}
-		$(sdNames[c].find('.studentName').html(studentNameString2));
+		$(sdA[c]).find('.studentName').html(studentNameString2);
 
 
 	 
@@ -144,7 +133,7 @@ for (var d=0; d<sdA.length && d<sdNumber.length; d++) {
 
 			}); //closes add button
 
-	$('.saveBtn').on('click', function(){
+	$('.csSaveBtn').on('click', function(){
 
 		
 		console.log(clonedRoster);
