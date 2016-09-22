@@ -249,7 +249,7 @@ $('.raninv').css('opacity', '0');
 		console.log(studentNameString);
 	}
 		$(sdNames[d].prepend('<br/><div class="studentName">' + studentNameString + 
-			'</div><br/>'));
+			'</div>'));
 	 
 	}
 

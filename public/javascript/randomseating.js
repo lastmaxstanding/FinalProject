@@ -54,7 +54,7 @@ $('.raninv').css('opacity', '0');
 		studentNameString = tempR[0][d]
 	}
 		$(sdA[d]).prepend('<br/><div class="studentName">' + studentNameString + 
-			'</div><br/>');
+			'</div>');
 	 
 	}
 
