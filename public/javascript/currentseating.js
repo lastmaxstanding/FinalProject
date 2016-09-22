@@ -58,7 +58,7 @@ for (var d=0; d<sdA.length && d<sdNumber.length; d++) {
 		studentNameString = tempR[0][d]
 	}
 		$(sdNames[d].prepend('<br/><div class="studentName">' + studentNameString + 
-			'</div><br/>'));
+			'</div>'));
 	 
 	}
 
@@ -102,7 +102,7 @@ for (var d=0; d<sdA.length && d<sdNumber.length; d++) {
 		var valFirst = $('#first').val().trim();
 		
 		var valSeat = parseInt($('#seat').val().trim() - 1);
-		var valFL = valLast + ", " + valFirst;
+		var valFL = valLast +'</br>'+ valFirst;
 
 
 
