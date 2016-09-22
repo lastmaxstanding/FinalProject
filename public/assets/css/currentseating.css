@@ -115,6 +115,18 @@ body {
 
 }
 
+@media (max-width: 1024px) {
+  .removeBtn {
+
+  padding: 0px;
+  height:25px;
+  width:80px;
+  background-color: red;
+  margin-bottom:10px;
+  color:black;
+}
+}
+
 .sdRadio, .tdRadio{
 margin-left:25px;
 
@@ -227,6 +239,19 @@ margin-left:25px;
 
 }
 
+@media (max-width: 1024px) {
+  .addBtn {
+
+  padding: 0px;
+  height:25px;
+  width:80px;
+  background-color: yellow;
+  margin-bottom:10px;
+  color:black;
+
+}
+}
+
 .saveBtn {
 
   padding: 0px;
@@ -237,6 +262,19 @@ margin-left:25px;
   color:black;
 
 
+}
+
+@media (max-width: 1024px) {
+  .saveBtn {
+
+  padding: 0px;
+  height:25px;
+  width:80px;
+  background-color: palegreen;
+  margin-bottom:10px;
+  color:black;
+
+}
 }
 
 .sdTem {
@@ -297,6 +335,19 @@ margin-left:25px;
 
 }
 
+@media (max-width: 1024px) {
+  .tdin{
+
+  padding: 0px;
+  height:25px;
+  width:80px;
+  background-color: #808CFF;
+  margin-bottom:10px;
+  color:white;
+
+}
+}
+
 
 
 .firstbox {
@@ -336,6 +387,17 @@ margin-left:25px;
   color:white;
 }
 
+@media (max-width: 1024px) {
+.firstcolumn, .eighthcolumn{
+  padding: 0px;
+  height:100px;
+  width:30px;
+  background-color: #808CFF;
+  margin-bottom:158px;
+  color:white;
+}
+}
+
 .secondbox, .thirdbox, .fourthbox, .fifthbox, .sixthbox, .seventhbox {
   padding:0px;
   background-color: white;
@@ -368,6 +430,17 @@ margin-left:25px;
   border-width:5px;
 }
 
+@media (max-width: 1024px) {
+  .boxtemp1, .boxtemp2, .boxtemp3, .boxtemp4 {
+  width:80px;
+  height:90px;
+  margin-bottom:0px;
+  background-color: palegreen;
+  border-color:red;
+  border-width:5px;
+  }
+}
+
 .boxtemp1a {
 
   width:125px;
@@ -377,6 +450,19 @@ margin-left:25px;
   border-color:red;
   border-width:5px;
   color:white;
+}
+
+@media (max-width: 1024px) {
+  .boxtemp1a {
+
+  width:80px;
+  height:25px;
+  margin-bottom:10px;
+  background-color: black;
+  border-color:red;
+  border-width:5px;
+  color:white;
+}
 }
 
 .boxtemp5 {
