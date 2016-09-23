@@ -248,8 +248,7 @@ margin-left:25px;
 
 }
 
-.asSaveBtn, .twoBtn, .threeBtn, 
-.fourBtn, .fiveBtn, .sixBtn {
+.asSaveBtn {
 
   padding: 0px;
   height:25px;
@@ -262,14 +261,198 @@ margin-left:25px;
 }
 
 .rgBtn {
+  position:absolute;
+  top:89px;
+  left:75px;
   padding: 0px;
   height:25px;
   width:125px;
-  background-color: palegreen;
+  background-color: black;
+  margin-bottom:10px;
+  color:white;
+
+}
+
+.twoBtn {
+  position:absolute;
+  top: 119px;
+  left:75px;
+  padding: 0px;
+  height:25px;
+  width:125px;
+  background-color: tomato;
   margin-bottom:10px;
   color:black;
 
+
 }
+
+.threeBtn {
+  position:absolute;
+  top: 119px;
+  left:215px;
+  padding: 0px;
+  height:25px;
+  width:125px;
+  background-color: tomato;
+  margin-bottom:10px;
+  color:black;
+
+
+}
+
+.fourBtn {
+  position:absolute;
+  top: 119px;
+  left:355px;
+  padding: 0px;
+  height:25px;
+  width:125px;
+  background-color: tomato;
+  margin-bottom:10px;
+  color:black;
+
+
+}
+
+ .fiveBtn  {
+  position:absolute;
+  top: 119px;
+  left:495px;
+  padding: 0px;
+  height:25px;
+  width:125px;
+  background-color: tomato;
+  margin-bottom:10px;
+  color:black;
+
+
+}
+
+.sixBtn  {
+  position:absolute;
+  top: 119px;
+  left:635px;
+  padding: 0px;
+  height:25px;
+  width:125px;
+  background-color: tomato;
+  margin-bottom:10px;
+  color:black;
+
+
+}
+
+.gColor{
+  position:absolute;
+  top: 150px;
+  left: 75px;
+  background-color: moccasin;
+  font-size:16px;
+  text-align: center;
+
+
+}
+
+@media (max-width: 768px) {
+ .rgBtn {
+  position:absolute;
+  top:89px;
+  left:26px;
+  padding: 0px;
+  height:25px;
+  width:100px;
+  background-color: black;
+  margin-bottom:10px;
+  color:white;
+
+}
+
+.twoBtn {
+  position:absolute;
+  top: 119px;
+  left:26px;
+  padding: 0px;
+  height:25px;
+  width:100px;
+  background-color: tomato;
+  margin-bottom:10px;
+  color:black;
+
+
+}
+
+.threeBtn {
+  position:absolute;
+  top: 119px;
+  left:130px;
+  padding: 0px;
+  height:25px;
+  width:100px;
+  background-color: tomato;
+  margin-bottom:10px;
+  color:black;
+
+
+}
+
+.fourBtn {
+  position:absolute;
+  top: 119px;
+  left:234px;
+  padding: 0px;
+  height:25px;
+  width:100px;
+  background-color: tomato;
+  margin-bottom:10px;
+  color:black;
+
+
+}
+
+ .fiveBtn  {
+  position:absolute;
+  top: 119px;
+  left:338px;
+  padding: 0px;
+  height:25px;
+  width:100px;
+  background-color: tomato;
+  margin-bottom:10px;
+  color:black;
+
+
+}
+
+.sixBtn  {
+  position:absolute;
+  top: 119px;
+  left:442px;
+  padding: 0px;
+  height:25px;
+  width:100px;
+  background-color: tomato;
+  margin-bottom:10px;
+  color:black;
+
+
+}
+
+.gColor{
+  position:absolute;
+  top: 150px;
+  left: 26px;
+  
+  background-color: moccasin;
+  
+  font-size:16px;
+  text-align: center;
+
+
+}
+}
+
+
 
 
 
@@ -357,13 +540,7 @@ margin-left:25px;
   
   
 } 
-.gColor{
-  background-color: moccasin;
-  margin-left: 35px;
-  font-size:16px;
-  text-align: left;
 
-}
 
 
 .inputcolor{
